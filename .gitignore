@@ -1,0 +1,30 @@
+# Secrets
+.env
+
+# Private operational driver (not for public release)
+main_live.py
+
+# Reproduction code (to be added at companion paper publication)
+monitor_tda.py
+
+# Private SQLite database
+tda_monitoring.db
+tda_monitoring.db-wal
+tda_monitoring.db-shm
+
+# Python build artifacts
+__pycache__/
+*.pyc
+*.pyo
+
+# Logs
+*.log
+
+# OS / editor metadata
+.DS_Store
+.vscode/
+.idea/
+
+# Temporary files
+*.tmp
+*~
