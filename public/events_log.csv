@@ -18692,3 +18692,8 @@ F1,RSI extreme (control),2,ticker=QQQ rsi=73.3,2026-05-15,QQQ
 F1,RSI extreme (control),2,ticker=TNX rsi=71.1,2026-05-15,TNX
 F2,Bollinger Band breach (control),2,ticker=HYG bb_z=-2.91,2026-05-15,HYG
 F2,Bollinger Band breach (control),2,ticker=TNX bb_z=2.61,2026-05-15,TNX
+F1,RSI extreme (control),2,ticker=QQQ rsi=76.1,2026-05-18,QQQ
+F1,RSI extreme (control),2,ticker=SPY rsi=73.1,2026-05-18,SPY
+F1,RSI extreme (control),2,ticker=TNX rsi=71.5,2026-05-18,TNX
+F2,Bollinger Band breach (control),2,ticker=HYG bb_z=-2.06,2026-05-18,HYG
+F2,Bollinger Band breach (control),2,ticker=TNX bb_z=2.44,2026-05-18,TNX
