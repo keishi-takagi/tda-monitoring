@@ -18706,3 +18706,6 @@ F1,RSI extreme (control),2,ticker=QQQ rsi=71.7,2026-05-21,QQQ
 F1,RSI extreme (control),2,ticker=QQQ rsi=73.5,2026-05-22,QQQ
 F1,RSI extreme (control),2,ticker=SPY rsi=71.8,2026-05-22,SPY
 F2,Bollinger Band breach (control),2,ticker=RSP bb_z=2.32,2026-05-22,RSP
+F1,RSI extreme (control),2,ticker=QQQ rsi=74.6,2026-05-26,QQQ
+F1,RSI extreme (control),2,ticker=SPY rsi=71.5,2026-05-26,SPY
+F2,Bollinger Band breach (control),2,ticker=RSP bb_z=2.39,2026-05-26,RSP
