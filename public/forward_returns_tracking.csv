@@ -93343,22 +93343,22 @@ signal_date,signal_category,signal_event,signal_ticker,horizon_d,target_date,sta
 2026-05-06,C1,Topological Decoupling (Energy TDA),VIX,5,2026-05-13,ready
 2026-05-06,C1,Topological Decoupling (Energy TDA),VIX,10,2026-05-20,ready
 2026-05-06,C1,Topological Decoupling (Energy TDA),VIX,15,2026-05-27,ready
-2026-05-06,C1,Topological Decoupling (Energy TDA),VIX,20,,pending
+2026-05-06,C1,Topological Decoupling (Energy TDA),VIX,20,2026-06-03,ready
 2026-05-06,F1,RSI extreme (control),IWM,1,2026-05-07,ready
 2026-05-06,F1,RSI extreme (control),IWM,5,2026-05-13,ready
 2026-05-06,F1,RSI extreme (control),IWM,10,2026-05-20,ready
 2026-05-06,F1,RSI extreme (control),IWM,15,2026-05-27,ready
-2026-05-06,F1,RSI extreme (control),IWM,20,,pending
+2026-05-06,F1,RSI extreme (control),IWM,20,2026-06-03,ready
 2026-05-06,F1,RSI extreme (control),QQQ,1,2026-05-07,ready
 2026-05-06,F1,RSI extreme (control),QQQ,5,2026-05-13,ready
 2026-05-06,F1,RSI extreme (control),QQQ,10,2026-05-20,ready
 2026-05-06,F1,RSI extreme (control),QQQ,15,2026-05-27,ready
-2026-05-06,F1,RSI extreme (control),QQQ,20,,pending
+2026-05-06,F1,RSI extreme (control),QQQ,20,2026-06-03,ready
 2026-05-06,F1,RSI extreme (control),SPY,1,2026-05-07,ready
 2026-05-06,F1,RSI extreme (control),SPY,5,2026-05-13,ready
 2026-05-06,F1,RSI extreme (control),SPY,10,2026-05-20,ready
 2026-05-06,F1,RSI extreme (control),SPY,15,2026-05-27,ready
-2026-05-06,F1,RSI extreme (control),SPY,20,,pending
+2026-05-06,F1,RSI extreme (control),SPY,20,2026-06-03,ready
 2026-05-07,C1,Topological Decoupling (Energy TDA),VIX,1,2026-05-08,ready
 2026-05-07,C1,Topological Decoupling (Energy TDA),VIX,5,2026-05-14,ready
 2026-05-07,C1,Topological Decoupling (Energy TDA),VIX,10,2026-05-21,ready
@@ -93427,12 +93427,12 @@ signal_date,signal_category,signal_event,signal_ticker,horizon_d,target_date,sta
 2026-05-13,F1,RSI extreme (control),QQQ,1,2026-05-14,ready
 2026-05-13,F1,RSI extreme (control),QQQ,5,2026-05-20,ready
 2026-05-13,F1,RSI extreme (control),QQQ,10,2026-05-27,ready
-2026-05-13,F1,RSI extreme (control),QQQ,15,,pending
+2026-05-13,F1,RSI extreme (control),QQQ,15,2026-06-03,ready
 2026-05-13,F1,RSI extreme (control),QQQ,20,,pending
 2026-05-13,F1,RSI extreme (control),SPY,1,2026-05-14,ready
 2026-05-13,F1,RSI extreme (control),SPY,5,2026-05-20,ready
 2026-05-13,F1,RSI extreme (control),SPY,10,2026-05-27,ready
-2026-05-13,F1,RSI extreme (control),SPY,15,,pending
+2026-05-13,F1,RSI extreme (control),SPY,15,2026-06-03,ready
 2026-05-13,F1,RSI extreme (control),SPY,20,,pending
 2026-05-14,F1,RSI extreme (control),QQQ,1,2026-05-15,ready
 2026-05-14,F1,RSI extreme (control),QQQ,5,2026-05-21,ready
@@ -93511,7 +93511,7 @@ signal_date,signal_category,signal_event,signal_ticker,horizon_d,target_date,sta
 2026-05-19,F2,Bollinger Band breach (control),TNX,20,,pending
 2026-05-20,F1,RSI extreme (control),QQQ,1,2026-05-21,ready
 2026-05-20,F1,RSI extreme (control),QQQ,5,2026-05-27,ready
-2026-05-20,F1,RSI extreme (control),QQQ,10,,pending
+2026-05-20,F1,RSI extreme (control),QQQ,10,2026-06-03,ready
 2026-05-20,F1,RSI extreme (control),QQQ,15,,pending
 2026-05-20,F1,RSI extreme (control),QQQ,20,,pending
 2026-05-21,F1,RSI extreme (control),QQQ,1,2026-05-22,ready
@@ -93579,18 +93579,28 @@ signal_date,signal_category,signal_event,signal_ticker,horizon_d,target_date,sta
 2026-05-29,F2,Bollinger Band breach (control),VIX,10,,pending
 2026-05-29,F2,Bollinger Band breach (control),VIX,15,,pending
 2026-05-29,F2,Bollinger Band breach (control),VIX,20,,pending
-2026-06-02,F1,RSI extreme (control),QQQ,1,,pending
+2026-06-02,F1,RSI extreme (control),QQQ,1,2026-06-03,ready
 2026-06-02,F1,RSI extreme (control),QQQ,5,,pending
 2026-06-02,F1,RSI extreme (control),QQQ,10,,pending
 2026-06-02,F1,RSI extreme (control),QQQ,15,,pending
 2026-06-02,F1,RSI extreme (control),QQQ,20,,pending
-2026-06-02,F1,RSI extreme (control),RSP,1,,pending
+2026-06-02,F1,RSI extreme (control),RSP,1,2026-06-03,ready
 2026-06-02,F1,RSI extreme (control),RSP,5,,pending
 2026-06-02,F1,RSI extreme (control),RSP,10,,pending
 2026-06-02,F1,RSI extreme (control),RSP,15,,pending
 2026-06-02,F1,RSI extreme (control),RSP,20,,pending
-2026-06-02,F1,RSI extreme (control),SPY,1,,pending
+2026-06-02,F1,RSI extreme (control),SPY,1,2026-06-03,ready
 2026-06-02,F1,RSI extreme (control),SPY,5,,pending
 2026-06-02,F1,RSI extreme (control),SPY,10,,pending
 2026-06-02,F1,RSI extreme (control),SPY,15,,pending
 2026-06-02,F1,RSI extreme (control),SPY,20,,pending
+2026-06-03,F1,RSI extreme (control),QQQ,1,,pending
+2026-06-03,F1,RSI extreme (control),QQQ,5,,pending
+2026-06-03,F1,RSI extreme (control),QQQ,10,,pending
+2026-06-03,F1,RSI extreme (control),QQQ,15,,pending
+2026-06-03,F1,RSI extreme (control),QQQ,20,,pending
+2026-06-03,F1,RSI extreme (control),RSP,1,,pending
+2026-06-03,F1,RSI extreme (control),RSP,5,,pending
+2026-06-03,F1,RSI extreme (control),RSP,10,,pending
+2026-06-03,F1,RSI extreme (control),RSP,15,,pending
+2026-06-03,F1,RSI extreme (control),RSP,20,,pending
