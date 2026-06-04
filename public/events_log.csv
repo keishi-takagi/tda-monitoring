@@ -18720,3 +18720,5 @@ F1,RSI extreme (control),2,ticker=RSP rsi=70.9,2026-06-02,RSP
 F1,RSI extreme (control),2,ticker=SPY rsi=71.2,2026-06-02,SPY
 F1,RSI extreme (control),2,ticker=QQQ rsi=70.6,2026-06-03,QQQ
 F1,RSI extreme (control),2,ticker=RSP rsi=71.4,2026-06-03,RSP
+F1,RSI extreme (control),2,ticker=RSP rsi=73.0,2026-06-04,RSP
+F1,RSI extreme (control),2,ticker=VIX rsi=26.3,2026-06-04,VIX
