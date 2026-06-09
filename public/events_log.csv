@@ -18724,3 +18724,5 @@ F1,RSI extreme (control),2,ticker=RSP rsi=73.0,2026-06-04,RSP
 F1,RSI extreme (control),2,ticker=VIX rsi=26.3,2026-06-04,VIX
 F2,Bollinger Band breach (control),2,ticker=VIX bb_z=3.07,2026-06-05,VIX
 F2,Bollinger Band breach (control),2,ticker=VIX9D bb_z=3.48,2026-06-05,VIX9D
+F1,RSI extreme (control),2,ticker=RSP rsi=73.8,2026-06-09,RSP
+F2,Bollinger Band breach (control),2,ticker=VIX9D bb_z=2.10,2026-06-09,VIX9D
