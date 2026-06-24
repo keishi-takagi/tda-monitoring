@@ -18732,3 +18732,4 @@ C1,Topological Decoupling (Energy TDA),3,brent_yoy=34.3 vix_sma10=17.7 delta_cnt
 F2,Bollinger Band breach (control),2,ticker=SPY bb_z=-2.23,2026-06-10,SPY
 F2,Bollinger Band breach (control),2,ticker=VIX bb_z=2.47,2026-06-10,VIX
 F2,Bollinger Band breach (control),2,ticker=VIX9D bb_z=2.50,2026-06-10,VIX9D
+F2,Bollinger Band breach (control),2,ticker=TNX bb_z=-2.05,2026-06-24,TNX
