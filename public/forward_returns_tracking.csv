@@ -93573,12 +93573,12 @@ signal_date,signal_category,signal_event,signal_ticker,horizon_d,target_date,sta
 2026-05-29,F1,RSI extreme (control),VIX,5,2026-06-05,ready
 2026-05-29,F1,RSI extreme (control),VIX,10,2026-06-12,ready
 2026-05-29,F1,RSI extreme (control),VIX,15,2026-06-19,ready
-2026-05-29,F1,RSI extreme (control),VIX,20,,pending
+2026-05-29,F1,RSI extreme (control),VIX,20,2026-06-26,ready
 2026-05-29,F2,Bollinger Band breach (control),VIX,1,2026-06-01,ready
 2026-05-29,F2,Bollinger Band breach (control),VIX,5,2026-06-05,ready
 2026-05-29,F2,Bollinger Band breach (control),VIX,10,2026-06-12,ready
 2026-05-29,F2,Bollinger Band breach (control),VIX,15,2026-06-19,ready
-2026-05-29,F2,Bollinger Band breach (control),VIX,20,,pending
+2026-05-29,F2,Bollinger Band breach (control),VIX,20,2026-06-26,ready
 2026-06-02,F1,RSI extreme (control),QQQ,1,2026-06-03,ready
 2026-06-02,F1,RSI extreme (control),QQQ,5,2026-06-09,ready
 2026-06-02,F1,RSI extreme (control),QQQ,10,2026-06-16,ready
@@ -93617,12 +93617,12 @@ signal_date,signal_category,signal_event,signal_ticker,horizon_d,target_date,sta
 2026-06-05,F2,Bollinger Band breach (control),VIX,1,2026-06-08,ready
 2026-06-05,F2,Bollinger Band breach (control),VIX,5,2026-06-12,ready
 2026-06-05,F2,Bollinger Band breach (control),VIX,10,2026-06-19,ready
-2026-06-05,F2,Bollinger Band breach (control),VIX,15,,pending
+2026-06-05,F2,Bollinger Band breach (control),VIX,15,2026-06-26,ready
 2026-06-05,F2,Bollinger Band breach (control),VIX,20,,pending
 2026-06-05,F2,Bollinger Band breach (control),VIX9D,1,2026-06-08,ready
 2026-06-05,F2,Bollinger Band breach (control),VIX9D,5,2026-06-12,ready
 2026-06-05,F2,Bollinger Band breach (control),VIX9D,10,2026-06-19,ready
-2026-06-05,F2,Bollinger Band breach (control),VIX9D,15,,pending
+2026-06-05,F2,Bollinger Band breach (control),VIX9D,15,2026-06-26,ready
 2026-06-05,F2,Bollinger Band breach (control),VIX9D,20,,pending
 2026-06-08,C1,Topological Decoupling (Energy TDA),VIX,1,2026-06-09,ready
 2026-06-08,C1,Topological Decoupling (Energy TDA),VIX,5,2026-06-15,ready
@@ -93669,3 +93669,13 @@ signal_date,signal_category,signal_event,signal_ticker,horizon_d,target_date,sta
 2026-06-24,F2,Bollinger Band breach (control),TNX,10,,pending
 2026-06-24,F2,Bollinger Band breach (control),TNX,15,,pending
 2026-06-24,F2,Bollinger Band breach (control),TNX,20,,pending
+2026-06-26,F1,RSI extreme (control),IWM,1,,pending
+2026-06-26,F1,RSI extreme (control),IWM,5,,pending
+2026-06-26,F1,RSI extreme (control),IWM,10,,pending
+2026-06-26,F1,RSI extreme (control),IWM,15,,pending
+2026-06-26,F1,RSI extreme (control),IWM,20,,pending
+2026-06-26,F2,Bollinger Band breach (control),TNX,1,,pending
+2026-06-26,F2,Bollinger Band breach (control),TNX,5,,pending
+2026-06-26,F2,Bollinger Band breach (control),TNX,10,,pending
+2026-06-26,F2,Bollinger Band breach (control),TNX,15,,pending
+2026-06-26,F2,Bollinger Band breach (control),TNX,20,,pending
