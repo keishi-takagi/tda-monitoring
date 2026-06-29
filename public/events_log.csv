@@ -18735,3 +18735,6 @@ F2,Bollinger Band breach (control),2,ticker=VIX9D bb_z=2.50,2026-06-10,VIX9D
 F2,Bollinger Band breach (control),2,ticker=TNX bb_z=-2.05,2026-06-24,TNX
 F1,RSI extreme (control),2,ticker=IWM rsi=73.6,2026-06-26,IWM
 F2,Bollinger Band breach (control),2,ticker=TNX bb_z=-2.04,2026-06-26,TNX
+F1,RSI extreme (control),2,ticker=IWM rsi=70.2,2026-06-29,IWM
+F1,RSI extreme (control),2,ticker=TNX rsi=30.0,2026-06-29,TNX
+F2,Bollinger Band breach (control),2,ticker=RSP bb_z=2.03,2026-06-29,RSP

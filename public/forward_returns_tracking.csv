@@ -93627,7 +93627,7 @@ signal_date,signal_category,signal_event,signal_ticker,horizon_d,target_date,sta
 2026-06-08,C1,Topological Decoupling (Energy TDA),VIX,1,2026-06-09,ready
 2026-06-08,C1,Topological Decoupling (Energy TDA),VIX,5,2026-06-15,ready
 2026-06-08,C1,Topological Decoupling (Energy TDA),VIX,10,2026-06-22,ready
-2026-06-08,C1,Topological Decoupling (Energy TDA),VIX,15,,pending
+2026-06-08,C1,Topological Decoupling (Energy TDA),VIX,15,2026-06-29,ready
 2026-06-08,C1,Topological Decoupling (Energy TDA),VIX,20,,pending
 2026-06-09,C1,Topological Decoupling (Energy TDA),VIX,1,2026-06-10,ready
 2026-06-09,C1,Topological Decoupling (Energy TDA),VIX,5,2026-06-16,ready
@@ -93669,13 +93669,28 @@ signal_date,signal_category,signal_event,signal_ticker,horizon_d,target_date,sta
 2026-06-24,F2,Bollinger Band breach (control),TNX,10,,pending
 2026-06-24,F2,Bollinger Band breach (control),TNX,15,,pending
 2026-06-24,F2,Bollinger Band breach (control),TNX,20,,pending
-2026-06-26,F1,RSI extreme (control),IWM,1,,pending
+2026-06-26,F1,RSI extreme (control),IWM,1,2026-06-29,ready
 2026-06-26,F1,RSI extreme (control),IWM,5,,pending
 2026-06-26,F1,RSI extreme (control),IWM,10,,pending
 2026-06-26,F1,RSI extreme (control),IWM,15,,pending
 2026-06-26,F1,RSI extreme (control),IWM,20,,pending
-2026-06-26,F2,Bollinger Band breach (control),TNX,1,,pending
+2026-06-26,F2,Bollinger Band breach (control),TNX,1,2026-06-29,ready
 2026-06-26,F2,Bollinger Band breach (control),TNX,5,,pending
 2026-06-26,F2,Bollinger Band breach (control),TNX,10,,pending
 2026-06-26,F2,Bollinger Band breach (control),TNX,15,,pending
 2026-06-26,F2,Bollinger Band breach (control),TNX,20,,pending
+2026-06-29,F1,RSI extreme (control),IWM,1,,pending
+2026-06-29,F1,RSI extreme (control),IWM,5,,pending
+2026-06-29,F1,RSI extreme (control),IWM,10,,pending
+2026-06-29,F1,RSI extreme (control),IWM,15,,pending
+2026-06-29,F1,RSI extreme (control),IWM,20,,pending
+2026-06-29,F1,RSI extreme (control),TNX,1,,pending
+2026-06-29,F1,RSI extreme (control),TNX,5,,pending
+2026-06-29,F1,RSI extreme (control),TNX,10,,pending
+2026-06-29,F1,RSI extreme (control),TNX,15,,pending
+2026-06-29,F1,RSI extreme (control),TNX,20,,pending
+2026-06-29,F2,Bollinger Band breach (control),RSP,1,,pending
+2026-06-29,F2,Bollinger Band breach (control),RSP,5,,pending
+2026-06-29,F2,Bollinger Band breach (control),RSP,10,,pending
+2026-06-29,F2,Bollinger Band breach (control),RSP,15,,pending
+2026-06-29,F2,Bollinger Band breach (control),RSP,20,,pending
