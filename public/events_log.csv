@@ -18738,3 +18738,4 @@ F2,Bollinger Band breach (control),2,ticker=TNX bb_z=-2.04,2026-06-26,TNX
 F1,RSI extreme (control),2,ticker=IWM rsi=70.2,2026-06-29,IWM
 F1,RSI extreme (control),2,ticker=TNX rsi=30.0,2026-06-29,TNX
 F2,Bollinger Band breach (control),2,ticker=RSP bb_z=2.03,2026-06-29,RSP
+F1,RSI extreme (control),2,ticker=IWM rsi=70.7,2026-06-30,IWM
