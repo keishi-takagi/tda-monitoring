@@ -93633,17 +93633,17 @@ signal_date,signal_category,signal_event,signal_ticker,horizon_d,target_date,sta
 2026-06-09,C1,Topological Decoupling (Energy TDA),VIX,5,2026-06-16,ready
 2026-06-09,C1,Topological Decoupling (Energy TDA),VIX,10,2026-06-23,ready
 2026-06-09,C1,Topological Decoupling (Energy TDA),VIX,15,2026-06-30,ready
-2026-06-09,C1,Topological Decoupling (Energy TDA),VIX,20,,pending
+2026-06-09,C1,Topological Decoupling (Energy TDA),VIX,20,2026-07-07,ready
 2026-06-09,F1,RSI extreme (control),RSP,1,2026-06-10,ready
 2026-06-09,F1,RSI extreme (control),RSP,5,2026-06-16,ready
 2026-06-09,F1,RSI extreme (control),RSP,10,2026-06-23,ready
 2026-06-09,F1,RSI extreme (control),RSP,15,2026-06-30,ready
-2026-06-09,F1,RSI extreme (control),RSP,20,,pending
+2026-06-09,F1,RSI extreme (control),RSP,20,2026-07-07,ready
 2026-06-09,F2,Bollinger Band breach (control),VIX9D,1,2026-06-10,ready
 2026-06-09,F2,Bollinger Band breach (control),VIX9D,5,2026-06-16,ready
 2026-06-09,F2,Bollinger Band breach (control),VIX9D,10,2026-06-23,ready
 2026-06-09,F2,Bollinger Band breach (control),VIX9D,15,2026-06-30,ready
-2026-06-09,F2,Bollinger Band breach (control),VIX9D,20,,pending
+2026-06-09,F2,Bollinger Band breach (control),VIX9D,20,2026-07-07,ready
 2026-06-10,C1,Topological Decoupling (Energy TDA),VIX,1,2026-06-11,ready
 2026-06-10,C1,Topological Decoupling (Energy TDA),VIX,5,2026-06-17,ready
 2026-06-10,C1,Topological Decoupling (Energy TDA),VIX,10,2026-06-24,ready
@@ -93695,7 +93695,7 @@ signal_date,signal_category,signal_event,signal_ticker,horizon_d,target_date,sta
 2026-06-29,F2,Bollinger Band breach (control),RSP,15,,pending
 2026-06-29,F2,Bollinger Band breach (control),RSP,20,,pending
 2026-06-30,F1,RSI extreme (control),IWM,1,2026-07-01,ready
-2026-06-30,F1,RSI extreme (control),IWM,5,,pending
+2026-06-30,F1,RSI extreme (control),IWM,5,2026-07-07,ready
 2026-06-30,F1,RSI extreme (control),IWM,10,,pending
 2026-06-30,F1,RSI extreme (control),IWM,15,,pending
 2026-06-30,F1,RSI extreme (control),IWM,20,,pending
@@ -93714,3 +93714,8 @@ signal_date,signal_category,signal_event,signal_ticker,horizon_d,target_date,sta
 2026-07-02,F2,Bollinger Band breach (control),RSP,10,,pending
 2026-07-02,F2,Bollinger Band breach (control),RSP,15,,pending
 2026-07-02,F2,Bollinger Band breach (control),RSP,20,,pending
+2026-07-07,A1,HHH cell activated (Paper #8),HYG,1,,pending
+2026-07-07,A1,HHH cell activated (Paper #8),HYG,5,,pending
+2026-07-07,A1,HHH cell activated (Paper #8),HYG,10,,pending
+2026-07-07,A1,HHH cell activated (Paper #8),HYG,15,,pending
+2026-07-07,A1,HHH cell activated (Paper #8),HYG,20,,pending
