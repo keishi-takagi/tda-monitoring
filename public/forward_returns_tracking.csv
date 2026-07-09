@@ -93710,7 +93710,7 @@ signal_date,signal_category,signal_event,signal_ticker,horizon_d,target_date,sta
 2026-07-01,F1,RSI extreme (control),VIX9D,15,,pending
 2026-07-01,F1,RSI extreme (control),VIX9D,20,,pending
 2026-07-02,F2,Bollinger Band breach (control),RSP,1,2026-07-03,ready
-2026-07-02,F2,Bollinger Band breach (control),RSP,5,,pending
+2026-07-02,F2,Bollinger Band breach (control),RSP,5,2026-07-09,ready
 2026-07-02,F2,Bollinger Band breach (control),RSP,10,,pending
 2026-07-02,F2,Bollinger Band breach (control),RSP,15,,pending
 2026-07-02,F2,Bollinger Band breach (control),RSP,20,,pending
