@@ -18744,3 +18744,4 @@ F1,RSI extreme (control),2,ticker=VIX9D rsi=28.9,2026-07-01,VIX9D
 F2,Bollinger Band breach (control),2,ticker=RSP bb_z=2.08,2026-07-02,RSP
 A1,HHH cell activated (Paper #8),3,cnt_z=2.88 ent_z=1.12 euler_z=2.08,2026-07-07,HYG
 F2,Bollinger Band breach (control),2,ticker=TNX bb_z=2.01,2026-07-13,TNX
+F1,RSI extreme (control),2,ticker=TNX rsi=71.2,2026-07-16,TNX
