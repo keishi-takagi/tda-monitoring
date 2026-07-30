@@ -93713,7 +93713,7 @@ signal_date,signal_category,signal_event,signal_ticker,horizon_d,target_date,sta
 2026-07-02,F2,Bollinger Band breach (control),RSP,5,2026-07-09,ready
 2026-07-02,F2,Bollinger Band breach (control),RSP,10,2026-07-16,ready
 2026-07-02,F2,Bollinger Band breach (control),RSP,15,2026-07-23,ready
-2026-07-02,F2,Bollinger Band breach (control),RSP,20,,pending
+2026-07-02,F2,Bollinger Band breach (control),RSP,20,2026-07-30,ready
 2026-07-07,A1,HHH cell activated (Paper #8),HYG,1,2026-07-08,ready
 2026-07-07,A1,HHH cell activated (Paper #8),HYG,5,2026-07-14,ready
 2026-07-07,A1,HHH cell activated (Paper #8),HYG,10,2026-07-21,ready
@@ -93726,7 +93726,7 @@ signal_date,signal_category,signal_event,signal_ticker,horizon_d,target_date,sta
 2026-07-13,F2,Bollinger Band breach (control),TNX,20,,pending
 2026-07-16,F1,RSI extreme (control),TNX,1,2026-07-17,ready
 2026-07-16,F1,RSI extreme (control),TNX,5,2026-07-23,ready
-2026-07-16,F1,RSI extreme (control),TNX,10,,pending
+2026-07-16,F1,RSI extreme (control),TNX,10,2026-07-30,ready
 2026-07-16,F1,RSI extreme (control),TNX,15,,pending
 2026-07-16,F1,RSI extreme (control),TNX,20,,pending
 2026-07-17,F2,Bollinger Band breach (control),QQQ,1,2026-07-20,ready
@@ -93750,12 +93750,12 @@ signal_date,signal_category,signal_event,signal_ticker,horizon_d,target_date,sta
 2026-07-22,F1,RSI extreme (control),TNX,15,,pending
 2026-07-22,F1,RSI extreme (control),TNX,20,,pending
 2026-07-23,F1,RSI extreme (control),TNX,1,2026-07-24,ready
-2026-07-23,F1,RSI extreme (control),TNX,5,,pending
+2026-07-23,F1,RSI extreme (control),TNX,5,2026-07-30,ready
 2026-07-23,F1,RSI extreme (control),TNX,10,,pending
 2026-07-23,F1,RSI extreme (control),TNX,15,,pending
 2026-07-23,F1,RSI extreme (control),TNX,20,,pending
 2026-07-23,F2,Bollinger Band breach (control),HYG,1,2026-07-24,ready
-2026-07-23,F2,Bollinger Band breach (control),HYG,5,,pending
+2026-07-23,F2,Bollinger Band breach (control),HYG,5,2026-07-30,ready
 2026-07-23,F2,Bollinger Band breach (control),HYG,10,,pending
 2026-07-23,F2,Bollinger Band breach (control),HYG,15,,pending
 2026-07-23,F2,Bollinger Band breach (control),HYG,20,,pending
@@ -93789,32 +93789,32 @@ signal_date,signal_category,signal_event,signal_ticker,horizon_d,target_date,sta
 2026-07-28,F2,Bollinger Band breach (control),RSP,10,,pending
 2026-07-28,F2,Bollinger Band breach (control),RSP,15,,pending
 2026-07-28,F2,Bollinger Band breach (control),RSP,20,,pending
-2026-07-29,F1,RSI extreme (control),QQQ,1,,pending
+2026-07-29,F1,RSI extreme (control),QQQ,1,2026-07-30,ready
 2026-07-29,F1,RSI extreme (control),QQQ,5,,pending
 2026-07-29,F1,RSI extreme (control),QQQ,10,,pending
 2026-07-29,F1,RSI extreme (control),QQQ,15,,pending
 2026-07-29,F1,RSI extreme (control),QQQ,20,,pending
-2026-07-29,F2,Bollinger Band breach (control),IWM,1,,pending
+2026-07-29,F2,Bollinger Band breach (control),IWM,1,2026-07-30,ready
 2026-07-29,F2,Bollinger Band breach (control),IWM,5,,pending
 2026-07-29,F2,Bollinger Band breach (control),IWM,10,,pending
 2026-07-29,F2,Bollinger Band breach (control),IWM,15,,pending
 2026-07-29,F2,Bollinger Band breach (control),IWM,20,,pending
-2026-07-29,F2,Bollinger Band breach (control),QQQ,1,,pending
+2026-07-29,F2,Bollinger Band breach (control),QQQ,1,2026-07-30,ready
 2026-07-29,F2,Bollinger Band breach (control),QQQ,5,,pending
 2026-07-29,F2,Bollinger Band breach (control),QQQ,10,,pending
 2026-07-29,F2,Bollinger Band breach (control),QQQ,15,,pending
 2026-07-29,F2,Bollinger Band breach (control),QQQ,20,,pending
-2026-07-29,F2,Bollinger Band breach (control),SPY,1,,pending
+2026-07-29,F2,Bollinger Band breach (control),SPY,1,2026-07-30,ready
 2026-07-29,F2,Bollinger Band breach (control),SPY,5,,pending
 2026-07-29,F2,Bollinger Band breach (control),SPY,10,,pending
 2026-07-29,F2,Bollinger Band breach (control),SPY,15,,pending
 2026-07-29,F2,Bollinger Band breach (control),SPY,20,,pending
-2026-07-29,F2,Bollinger Band breach (control),VIX,1,,pending
+2026-07-29,F2,Bollinger Band breach (control),VIX,1,2026-07-30,ready
 2026-07-29,F2,Bollinger Band breach (control),VIX,5,,pending
 2026-07-29,F2,Bollinger Band breach (control),VIX,10,,pending
 2026-07-29,F2,Bollinger Band breach (control),VIX,15,,pending
 2026-07-29,F2,Bollinger Band breach (control),VIX,20,,pending
-2026-07-29,F2,Bollinger Band breach (control),VIX9D,1,,pending
+2026-07-29,F2,Bollinger Band breach (control),VIX9D,1,2026-07-30,ready
 2026-07-29,F2,Bollinger Band breach (control),VIX9D,5,,pending
 2026-07-29,F2,Bollinger Band breach (control),VIX9D,10,,pending
 2026-07-29,F2,Bollinger Band breach (control),VIX9D,15,,pending
