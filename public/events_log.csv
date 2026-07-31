@@ -18763,3 +18763,4 @@ F2,Bollinger Band breach (control),2,ticker=QQQ bb_z=-2.38,2026-07-29,QQQ
 F2,Bollinger Band breach (control),2,ticker=SPY bb_z=-2.55,2026-07-29,SPY
 F2,Bollinger Band breach (control),2,ticker=VIX bb_z=2.38,2026-07-29,VIX
 F2,Bollinger Band breach (control),2,ticker=VIX9D bb_z=2.08,2026-07-29,VIX9D
+F2,Bollinger Band breach (control),2,ticker=TNX bb_z=2.17,2026-07-31,TNX
