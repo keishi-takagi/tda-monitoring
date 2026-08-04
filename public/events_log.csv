@@ -18751,12 +18751,15 @@ F1,RSI extreme (control),2,ticker=TNX rsi=72.5,2026-07-21,TNX
 F1,RSI extreme (control),2,ticker=TNX rsi=70.8,2026-07-22,TNX
 F1,RSI extreme (control),2,ticker=TNX rsi=73.0,2026-07-23,TNX
 F2,Bollinger Band breach (control),2,ticker=HYG bb_z=-2.84,2026-07-23,HYG
-F1,RSI extreme (control),2,ticker=HYG rsi=28.1,2026-07-24,HYG
+F1,RSI extreme (control),2,ticker=HYG rsi=22.2,2026-07-24,HYG
 F1,RSI extreme (control),2,ticker=TNX rsi=70.3,2026-07-24,TNX
-F2,Bollinger Band breach (control),2,ticker=HYG bb_z=-2.34,2026-07-24,HYG
+F2,Bollinger Band breach (control),2,ticker=HYG bb_z=-3.33,2026-07-24,HYG
 F2,Bollinger Band breach (control),2,ticker=QQQ bb_z=-2.10,2026-07-24,QQQ
+F1,RSI extreme (control),2,ticker=HYG rsi=25.4,2026-07-27,HYG
+F2,Bollinger Band breach (control),2,ticker=HYG bb_z=-2.49,2026-07-27,HYG
 F2,Bollinger Band breach (control),2,ticker=QQQ bb_z=-2.01,2026-07-28,QQQ
 F2,Bollinger Band breach (control),2,ticker=RSP bb_z=2.85,2026-07-28,RSP
+F1,RSI extreme (control),2,ticker=HYG rsi=26.6,2026-07-29,HYG
 F1,RSI extreme (control),2,ticker=QQQ rsi=21.8,2026-07-29,QQQ
 F2,Bollinger Band breach (control),2,ticker=IWM bb_z=-2.28,2026-07-29,IWM
 F2,Bollinger Band breach (control),2,ticker=QQQ bb_z=-2.38,2026-07-29,QQQ
