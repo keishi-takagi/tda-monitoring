@@ -18775,3 +18775,5 @@ F2,Bollinger Band breach (control),2,ticker=SPY bb_z=2.09,2026-08-05,SPY
 F1,RSI extreme (control),2,ticker=RSP rsi=71.3,2026-08-07,RSP
 F1,RSI extreme (control),2,ticker=RSP rsi=71.0,2026-08-10,RSP
 F1,RSI extreme (control),2,ticker=RSP rsi=71.9,2026-08-11,RSP
+F1,RSI extreme (control),2,ticker=RSP rsi=75.7,2026-08-12,RSP
+F1,RSI extreme (control),2,ticker=SPY rsi=75.2,2026-08-12,SPY
