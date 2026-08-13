@@ -93728,7 +93728,7 @@ signal_date,signal_category,signal_event,signal_ticker,horizon_d,target_date,sta
 2026-07-16,F1,RSI extreme (control),TNX,5,2026-07-23,ready
 2026-07-16,F1,RSI extreme (control),TNX,10,2026-07-30,ready
 2026-07-16,F1,RSI extreme (control),TNX,15,2026-08-06,ready
-2026-07-16,F1,RSI extreme (control),TNX,20,,pending
+2026-07-16,F1,RSI extreme (control),TNX,20,2026-08-13,ready
 2026-07-17,F2,Bollinger Band breach (control),QQQ,1,2026-07-20,ready
 2026-07-17,F2,Bollinger Band breach (control),QQQ,5,2026-07-24,ready
 2026-07-17,F2,Bollinger Band breach (control),QQQ,10,2026-07-31,ready
@@ -93752,12 +93752,12 @@ signal_date,signal_category,signal_event,signal_ticker,horizon_d,target_date,sta
 2026-07-23,F1,RSI extreme (control),TNX,1,2026-07-24,ready
 2026-07-23,F1,RSI extreme (control),TNX,5,2026-07-30,ready
 2026-07-23,F1,RSI extreme (control),TNX,10,2026-08-06,ready
-2026-07-23,F1,RSI extreme (control),TNX,15,,pending
+2026-07-23,F1,RSI extreme (control),TNX,15,2026-08-13,ready
 2026-07-23,F1,RSI extreme (control),TNX,20,,pending
 2026-07-23,F2,Bollinger Band breach (control),HYG,1,2026-07-24,ready
 2026-07-23,F2,Bollinger Band breach (control),HYG,5,2026-07-30,ready
 2026-07-23,F2,Bollinger Band breach (control),HYG,10,2026-08-06,ready
-2026-07-23,F2,Bollinger Band breach (control),HYG,15,,pending
+2026-07-23,F2,Bollinger Band breach (control),HYG,15,2026-08-13,ready
 2026-07-23,F2,Bollinger Band breach (control),HYG,20,,pending
 2026-07-24,F1,RSI extreme (control),HYG,1,2026-07-27,ready
 2026-07-24,F1,RSI extreme (control),HYG,5,2026-07-31,ready
@@ -93879,13 +93879,28 @@ signal_date,signal_category,signal_event,signal_ticker,horizon_d,target_date,sta
 2026-08-11,F1,RSI extreme (control),RSP,10,,pending
 2026-08-11,F1,RSI extreme (control),RSP,15,,pending
 2026-08-11,F1,RSI extreme (control),RSP,20,,pending
-2026-08-12,F1,RSI extreme (control),RSP,1,,pending
+2026-08-12,F1,RSI extreme (control),RSP,1,2026-08-13,ready
 2026-08-12,F1,RSI extreme (control),RSP,5,,pending
 2026-08-12,F1,RSI extreme (control),RSP,10,,pending
 2026-08-12,F1,RSI extreme (control),RSP,15,,pending
 2026-08-12,F1,RSI extreme (control),RSP,20,,pending
-2026-08-12,F1,RSI extreme (control),SPY,1,,pending
+2026-08-12,F1,RSI extreme (control),SPY,1,2026-08-13,ready
 2026-08-12,F1,RSI extreme (control),SPY,5,,pending
 2026-08-12,F1,RSI extreme (control),SPY,10,,pending
 2026-08-12,F1,RSI extreme (control),SPY,15,,pending
 2026-08-12,F1,RSI extreme (control),SPY,20,,pending
+2026-08-13,F1,RSI extreme (control),HYG,1,,pending
+2026-08-13,F1,RSI extreme (control),HYG,5,,pending
+2026-08-13,F1,RSI extreme (control),HYG,10,,pending
+2026-08-13,F1,RSI extreme (control),HYG,15,,pending
+2026-08-13,F1,RSI extreme (control),HYG,20,,pending
+2026-08-13,F1,RSI extreme (control),RSP,1,,pending
+2026-08-13,F1,RSI extreme (control),RSP,5,,pending
+2026-08-13,F1,RSI extreme (control),RSP,10,,pending
+2026-08-13,F1,RSI extreme (control),RSP,15,,pending
+2026-08-13,F1,RSI extreme (control),RSP,20,,pending
+2026-08-13,F1,RSI extreme (control),SPY,1,,pending
+2026-08-13,F1,RSI extreme (control),SPY,5,,pending
+2026-08-13,F1,RSI extreme (control),SPY,10,,pending
+2026-08-13,F1,RSI extreme (control),SPY,15,,pending
+2026-08-13,F1,RSI extreme (control),SPY,20,,pending
