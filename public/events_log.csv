@@ -18780,3 +18780,7 @@ F1,RSI extreme (control),2,ticker=SPY rsi=75.2,2026-08-12,SPY
 F1,RSI extreme (control),2,ticker=HYG rsi=77.1,2026-08-13,HYG
 F1,RSI extreme (control),2,ticker=RSP rsi=75.7,2026-08-13,RSP
 F1,RSI extreme (control),2,ticker=SPY rsi=76.8,2026-08-13,SPY
+F1,RSI extreme (control),2,ticker=HYG rsi=73.1,2026-08-14,HYG
+F1,RSI extreme (control),2,ticker=QQQ rsi=70.5,2026-08-14,QQQ
+F1,RSI extreme (control),2,ticker=RSP rsi=73.4,2026-08-14,RSP
+F1,RSI extreme (control),2,ticker=SPY rsi=75.1,2026-08-14,SPY
