@@ -93763,22 +93763,22 @@ signal_date,signal_category,signal_event,signal_ticker,horizon_d,target_date,sta
 2026-07-24,F1,RSI extreme (control),HYG,5,2026-07-31,ready
 2026-07-24,F1,RSI extreme (control),HYG,10,2026-08-07,ready
 2026-07-24,F1,RSI extreme (control),HYG,15,2026-08-14,ready
-2026-07-24,F1,RSI extreme (control),HYG,20,,pending
+2026-07-24,F1,RSI extreme (control),HYG,20,2026-08-21,ready
 2026-07-24,F1,RSI extreme (control),TNX,1,2026-07-27,ready
 2026-07-24,F1,RSI extreme (control),TNX,5,2026-07-31,ready
 2026-07-24,F1,RSI extreme (control),TNX,10,2026-08-07,ready
 2026-07-24,F1,RSI extreme (control),TNX,15,2026-08-14,ready
-2026-07-24,F1,RSI extreme (control),TNX,20,,pending
+2026-07-24,F1,RSI extreme (control),TNX,20,2026-08-21,ready
 2026-07-24,F2,Bollinger Band breach (control),HYG,1,2026-07-27,ready
 2026-07-24,F2,Bollinger Band breach (control),HYG,5,2026-07-31,ready
 2026-07-24,F2,Bollinger Band breach (control),HYG,10,2026-08-07,ready
 2026-07-24,F2,Bollinger Band breach (control),HYG,15,2026-08-14,ready
-2026-07-24,F2,Bollinger Band breach (control),HYG,20,,pending
+2026-07-24,F2,Bollinger Band breach (control),HYG,20,2026-08-21,ready
 2026-07-24,F2,Bollinger Band breach (control),QQQ,1,2026-07-27,ready
 2026-07-24,F2,Bollinger Band breach (control),QQQ,5,2026-07-31,ready
 2026-07-24,F2,Bollinger Band breach (control),QQQ,10,2026-08-07,ready
 2026-07-24,F2,Bollinger Band breach (control),QQQ,15,2026-08-14,ready
-2026-07-24,F2,Bollinger Band breach (control),QQQ,20,,pending
+2026-07-24,F2,Bollinger Band breach (control),QQQ,20,2026-08-21,ready
 2026-07-27,F1,RSI extreme (control),HYG,1,2026-07-28,ready
 2026-07-27,F1,RSI extreme (control),HYG,5,2026-08-03,ready
 2026-07-27,F1,RSI extreme (control),HYG,10,2026-08-10,ready
@@ -93837,7 +93837,7 @@ signal_date,signal_category,signal_event,signal_ticker,horizon_d,target_date,sta
 2026-07-31,F2,Bollinger Band breach (control),TNX,1,2026-08-03,ready
 2026-07-31,F2,Bollinger Band breach (control),TNX,5,2026-08-07,ready
 2026-07-31,F2,Bollinger Band breach (control),TNX,10,2026-08-14,ready
-2026-07-31,F2,Bollinger Band breach (control),TNX,15,,pending
+2026-07-31,F2,Bollinger Band breach (control),TNX,15,2026-08-21,ready
 2026-07-31,F2,Bollinger Band breach (control),TNX,20,,pending
 2026-08-04,F2,Bollinger Band breach (control),IWM,1,2026-08-05,ready
 2026-08-04,F2,Bollinger Band breach (control),IWM,5,2026-08-11,ready
@@ -93866,7 +93866,7 @@ signal_date,signal_category,signal_event,signal_ticker,horizon_d,target_date,sta
 2026-08-05,F2,Bollinger Band breach (control),SPY,20,,pending
 2026-08-07,F1,RSI extreme (control),RSP,1,2026-08-10,ready
 2026-08-07,F1,RSI extreme (control),RSP,5,2026-08-14,ready
-2026-08-07,F1,RSI extreme (control),RSP,10,,pending
+2026-08-07,F1,RSI extreme (control),RSP,10,2026-08-21,ready
 2026-08-07,F1,RSI extreme (control),RSP,15,,pending
 2026-08-07,F1,RSI extreme (control),RSP,20,,pending
 2026-08-10,F1,RSI extreme (control),RSP,1,2026-08-11,ready
@@ -93905,22 +93905,22 @@ signal_date,signal_category,signal_event,signal_ticker,horizon_d,target_date,sta
 2026-08-13,F1,RSI extreme (control),SPY,15,,pending
 2026-08-13,F1,RSI extreme (control),SPY,20,,pending
 2026-08-14,F1,RSI extreme (control),HYG,1,2026-08-17,ready
-2026-08-14,F1,RSI extreme (control),HYG,5,,pending
+2026-08-14,F1,RSI extreme (control),HYG,5,2026-08-21,ready
 2026-08-14,F1,RSI extreme (control),HYG,10,,pending
 2026-08-14,F1,RSI extreme (control),HYG,15,,pending
 2026-08-14,F1,RSI extreme (control),HYG,20,,pending
 2026-08-14,F1,RSI extreme (control),QQQ,1,2026-08-17,ready
-2026-08-14,F1,RSI extreme (control),QQQ,5,,pending
+2026-08-14,F1,RSI extreme (control),QQQ,5,2026-08-21,ready
 2026-08-14,F1,RSI extreme (control),QQQ,10,,pending
 2026-08-14,F1,RSI extreme (control),QQQ,15,,pending
 2026-08-14,F1,RSI extreme (control),QQQ,20,,pending
 2026-08-14,F1,RSI extreme (control),RSP,1,2026-08-17,ready
-2026-08-14,F1,RSI extreme (control),RSP,5,,pending
+2026-08-14,F1,RSI extreme (control),RSP,5,2026-08-21,ready
 2026-08-14,F1,RSI extreme (control),RSP,10,,pending
 2026-08-14,F1,RSI extreme (control),RSP,15,,pending
 2026-08-14,F1,RSI extreme (control),RSP,20,,pending
 2026-08-14,F1,RSI extreme (control),SPY,1,2026-08-17,ready
-2026-08-14,F1,RSI extreme (control),SPY,5,,pending
+2026-08-14,F1,RSI extreme (control),SPY,5,2026-08-21,ready
 2026-08-14,F1,RSI extreme (control),SPY,10,,pending
 2026-08-14,F1,RSI extreme (control),SPY,15,,pending
 2026-08-14,F1,RSI extreme (control),SPY,20,,pending
