@@ -18793,3 +18793,5 @@ F1,RSI extreme (control),2,ticker=VIX rsi=27.2,2026-08-18,VIX
 C1,Topological Decoupling (Energy TDA),3,brent_yoy=36.6 vix_sma10=15.0 delta_cnt=-13,2026-08-19,VIX
 F1,RSI extreme (control),2,ticker=RSP rsi=70.0,2026-08-19,RSP
 F1,RSI extreme (control),2,ticker=SPY rsi=73.1,2026-08-19,SPY
+F2,Bollinger Band breach (control),2,ticker=IWM bb_z=-2.29,2026-08-31,IWM
+F2,Bollinger Band breach (control),2,ticker=TNX bb_z=2.02,2026-08-31,TNX
