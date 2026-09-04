@@ -134,3 +134,121 @@ and validated on subsequent out-of-sample events.
 ---
 
 *End of log. Future entries appended below this line.*
+
+## Entry 002 — 2026-09-03 — C1 threshold adhesion without activation, 2026-08
+
+**Date of discovery:** 2026-09-03
+**Observed period:** 2026-08-03 through 2026-09-02 (23 trading days)
+**Status:** **Exploratory — no rule change made**
+
+### Observation
+
+Over the 23 trading days from 2026-08-03 to 2026-09-02, the three C1
+conditions (`tda_monitoring_rules.md` §2.4) held as follows:
+
+| Condition | Days satisfied (of 23) |
+|---|---|
+| `vix_sma10` < 20.0 | 23 |
+| `brent_yoy` > 30% | 17 |
+| `dcnt` (VIX) < −12 | 2 |
+| **All three simultaneously (C1 fired)** | **1** (2026-08-19) |
+
+Seventeen of the 23 days satisfied exactly two of the three conditions.
+The binding constraint was almost always `dcnt`.
+
+The specific feature worth noting is the distribution of `dcnt` relative to
+its threshold:
+
+| `dcnt` value | Days |
+|---|---|
+| −13 | 2 (2026-08-19, 2026-09-02) |
+| **−12 (exactly)** | **7** |
+| −11 | 3 |
+| −6 to −9 | 11 |
+
+`dcnt` is a discrete count (finite H1 generators at W=20 minus W=60), and
+the detection rule uses a strict inequality (`< −12`). Seven of 23 days sat
+exactly on the threshold value and therefore did not trigger.
+
+### Counterfactual under a non-strict inequality
+
+Substituting `≤ −12` for `< −12`, holding all other conditions and all
+frozen parameters (§6) unchanged, the same 23-day window would have
+produced the following C1 days:
+
+2026-08-19, 08-21, 08-24, 08-27, 08-28, 09-01 — six events instead of one.
+
+(2026-08-26 would still fail on `brent_yoy` = 27.9%; 2026-08-31 and
+2026-09-02 would still fail on missing Brent data — see below.)
+
+A single character in the inequality changes the August event count by a
+factor of six. This is a property of the rule's interaction with a discrete
+feature whose mass concentrates at the threshold, not a property of the
+market.
+
+### Ancillary: Brent data availability
+
+Two days in the observed window (2026-08-31 and 2026-09-02) have
+`brent_yoy = NaN` in `decoupling_status.csv`, and consequently
+`cond_brent_30 = 0`. This is the EIA `PET.RBRTE.D` publication lag, a known
+limitation, and §5.2 correctly prohibits silent substitution.
+
+2026-09-02 is the material case: `dcnt` = −13 and `vix_sma10` = 15.31 both
+satisfied, with `brent_yoy` unavailable. The prior trading day (2026-09-01)
+recorded 41.0%, but 2026-08-26 recorded 27.9%, so the value on 2026-09-02
+cannot be assumed above threshold.
+
+This is a data-availability matter rather than an exploratory market
+observation. It is noted here only because it falls inside the observed
+window; the primary record belongs in `run_metadata.json` per §5.2.
+
+No protocol change is required to resolve it. `events_log.csv` is
+regenerated over the full history on each run, so once EIA publishes the
+missing observations, an ordinary monitor run re-evaluates 2026-08-31 and
+2026-09-02 under the unmodified v1.0 rules. Whatever C1 status those days
+receive is produced by the rules as pre-registered, not by any intervention
+made after seeing the outcome.
+
+### Relation to existing rules and papers
+
+No rule in `tda_monitoring_rules.md` v1.0 covers near-threshold persistence.
+C1 is binary and records only simultaneous satisfaction, so a regime in
+which the decoupling conditions are continuously near-satisfied is, by
+construction, indistinguishable in `events_log.csv` from a regime in which
+they are far from satisfied.
+
+The observation is directly adjacent to the construction-sensitivity
+analysis in Paper #5. **It cannot be used as evidence there.** The pattern
+was identified after observing the August data, which makes any claim
+derived from it post-hoc under §7.1.
+
+### Status
+
+**Exploratory — no rule change made.** The strict inequality `dcnt < −12`
+in §2.4 remains exactly as pre-registered. The counterfactual recorded
+above was computed after observing the August data; it is documented here
+and deliberately not acted upon. `tda_monitoring_rules.md` remains at v1.0.
+
+Any future use of this pattern requires a fresh pre-registration motivated
+by a subsequent, independent episode — not by the window described in this
+entry — followed by accumulation of out-of-sample events under that new
+rule.
+
+### What this entry is for
+
+Entry 001 recorded a pattern that was observed and rejected. This entry
+records a different case: a rule modification that was available,
+identifiable in advance, and would have increased the August C1 event count
+sixfold — and was not made.
+
+Parameter freedom in TDA-based market analysis is large (window lengths,
+embedding dimension, delay, normalization, cell thresholds, ticker
+selection, and inequality strictness among them). Absence of specification
+search cannot be proven directly. What can be shown is that specific
+opportunities to search existed and were documented at the time they arose
+rather than after the fact. An empty change history in §8 carries evidential
+weight only alongside a record of the temptations that were declined.
+
+This entry is filed as one such record.
+
+---
