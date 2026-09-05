@@ -487,3 +487,115 @@ records. That widening is deliberate and is noted here so that it is not
 mistaken for drift.
 
 ---
+
+## Entry 005 — 2026-09-06 — Brent YoY variance in C1: measurement asymmetry, not a defect
+
+**Date of discovery:** 2026-09-06
+**Observed period:** 2026-08-03 through 2026-09-02 (23 trading days); historical
+context 1987-05-20 through 2026-09-01
+**Status:** `exploratory`
+
+### Origin
+
+Entry 002 recorded that the C1 conditions were near-satisfied for most of
+August 2026 without firing. While reviewing that window, the `brent_yoy`
+series was observed to move by 3.7 percentage points per day on average, with
+a maximum single-day change of 8.4 points. For a 252-observation trailing
+return that appeared implausibly large, and a data-quality fault was
+suspected.
+
+### Hypothesis tested and rejected
+
+The initial hypothesis was a calendar mismatch: `brent_yoy` is computed as
+`brent.pct_change(252)` on Brent's own index, and Brent (EIA PET.RBRTE.D)
+follows a different calendar from the US equity market, so 252 Brent
+observations need not span one year.
+
+This was measured and is not the cause. Over the last five years, 252 Brent
+observations span a mean of 365.2 calendar days (sd 3.0, range 359–374). The
+window is an accurate year.
+
+### Actual cause
+
+Decomposing the day-over-day change in `brent_yoy` into the current-day return
+and the return of the observation rolling off the back of the window, over the
+August window:
+
+| | mean \|return\| | max \|return\| |
+|---|---|---|
+| current day | 2.67% | 8.30% |
+| base day (t−252) | 1.24% | 2.82% |
+
+The variance originates almost entirely at the front of the window, in the
+current day's oil move.
+
+That in turn reflects the regime rather than the data. Mean absolute daily
+Brent return by year:
+
+| year | mean \|r\| |
+|---|---|
+| 2024 | 1.27% |
+| 2025 | 1.48% |
+| **2026** | **3.25%** |
+| 2020 (reference) | 3.47% |
+
+2026 is running at a volatility comparable to 2020. March 5.43%, April 4.43%,
+July 4.01%. The largest single move in the August window (−8.30% on
+2026-08-03) sits near the 99th percentile of the full 1987–2026 distribution
+(8.09%), which is extreme but within it.
+
+No data-quality fault was found. Repeated identical closes number 5 in the
+last 758 observations. Every gap longer than three days in 2026 (2026-04-07,
+05-05, 05-26, 09-01) corresponds to a holiday weekend.
+
+### The observation worth recording
+
+`brent_yoy` is a point-to-point comparison of two single-day prices. It
+therefore inherits the current day's oil volatility in full. The other
+continuous C1 input, `vix_sma10`, is a ten-day moving average and does not.
+The C1 construction (§2.4) mixes a smoothed input and an unsmoothed one
+against fixed thresholds.
+
+In the August window `brent_yoy` ranged from 25.07% to 43.04%. Against the
+30% threshold, `cond_brent_30` was satisfied on 17 of the 21 days for which
+Brent data was available, with three value-driven crossings of the threshold
+(2026-08-05→06 up, 08-25→26 down, 08-26→27 up) and three further transitions
+caused by missing data (2026-08-31 and 2026-09-02 NaN, and the return from
+NaN on 2026-09-01). Two days sat within half a point of the threshold:
+30.45% (08-07) and 30.24% (08-25).
+
+**The binding constraint in August was not Brent.** It was `dcnt`, as recorded
+in Entry 002. On 2026-08-19, the one day C1 fired, `brent_yoy` was 36.62% —
+comfortably clear of the threshold — and `dcnt` was −13. The Brent condition's
+variance did not determine the August outcome; it is recorded here as a
+property of the construction, not as an explanation of what happened.
+
+### Cross-check against existing frameworks (§7.2-3)
+
+Same window as Entry 002, and the cross-check is unchanged: Paper #6 places
+all 23 trading days in the SAFE zone (structural_risk = 0, fear_risk = 0).
+Among detection categories, only C1 fired (once, 2026-08-19); A1, A2, B1, D1
+and G1 did not; F1 (21) and F2 (13) fired at ordinary rates across seven
+tickers.
+
+### No rule change
+
+`tda_monitoring_rules.md` remains v1.0. §2.4 and the §6 frozen parameters are
+untouched.
+
+The smoothing asymmetry described above is a plausible design criticism, and
+smoothing `brent_yoy` would plausibly reduce the variance of the Brent
+condition. It is not being done. The asymmetry was noticed while examining the
+August window, which makes any change motivated by it post-hoc under §7.1 —
+the same reasoning that governed the `dcnt` inequality in Entry 002. A future
+change would require a fresh pre-registration motivated by an episode
+independent of this window.
+
+The distinction to preserve when this material is used: *a point-to-point
+threshold input inherits the full daily volatility of its series, while a
+smoothed input against a fixed threshold does not* is a statement about
+construction. *Brent volatility caused C1 to behave in a particular way in
+August 2026* is a statement about the market, and this entry does not support
+it — the August outcome was determined by `dcnt`.
+
+---
