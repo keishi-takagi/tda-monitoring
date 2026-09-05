@@ -346,3 +346,144 @@ field and supplies an omitted required field; it makes no claim about
 market behaviour and modifies no detection rule.
 
 ---
+
+## Entry 004 — 2026-09-05 — Three documented behaviours that were not implemented
+
+**Date of discovery:** 2026-09-05
+**Type:** implementation record (see §5)
+**Code versions:** `monitor_tda.py` v1.2 → v1.4. `tda_monitoring_rules.md` remains v1.0.
+
+This entry does not record a market pattern. It records three cases in which
+`tda_monitoring_rules.md` describes a behaviour that the code did not perform,
+and the corrections made. It is filed here because the third case changes
+15,941 previously published values in `public/forward_returns_tracking.csv`,
+and a change of that size to already-public data should not be made without a
+contemporaneous record.
+
+### 1. §4 forward returns were never computed
+
+`tda_monitoring_rules.md` §4 states that realized values are computed on
+subsequent monitor runs. Through v1.2 the code built tracking rows —
+`signal_date`, `signal_category`, `signal_event`, `signal_ticker`,
+`horizon_d`, `target_date`, `status` — and computed no returns at all.
+`public/forward_returns_tracking.csv` held 94,015 rows, 93,940 of them marked
+`ready`, none carrying a value.
+
+The consequence is that no detection had ever been compared against a
+published prediction interval. The C1 interval (VIX +20d, +1.86, 95% CI
+[1.41, 2.31]) and the B1 interval (QQQ 20d, +4.82%, CI [+1.78%, +7.64%]) had
+been in print without a single realized observation measured against them.
+
+Corrected in v1.3. Outcomes are now recorded mechanically for every outcome
+ticker at every horizon — `ret_pct_{HYG,SPY,QQQ,IWM,RSP}` and
+`diff_{VIX,VIX9D,TNX}` — so that no ticker or horizon is selected after the
+fact. The eight columns were appended; the seven pre-existing columns are
+unchanged (verified by exact frame comparison against the prior commit), and
+the `status` vocabulary (`ready` / `pending`) was deliberately left alone
+rather than renamed, which would have rewritten 93,940 published rows.
+
+The computation was applied retroactively to all existing events. Prices are
+not revised, so retroactive computation introduces no look-ahead. The reason
+for doing it now rather than later is that the measurement rule can still be
+shown to have been fixed before the outcomes were examined; that claim would
+not be available a year from now.
+
+### 2. §5.2 `run_metadata.json` did not exist in the daily pipeline
+
+§5.2 states that source failures are logged in `run_metadata.json`. That file
+was written only by `monitor_tda.py` in standalone mode. The daily driver
+wrote a DB row and no JSON, and the DB is not public. The `notes` column was
+hard-coded to `None`: all 83 recorded runs carry NULL.
+
+The clause therefore had never been satisfied by the daily pipeline. Concrete
+instances that should have been recorded and were not: Brent (EIA
+PET.RBRTE.D) was unavailable on 2026-08-31 and 2026-09-02, which set
+`cond_brent_30 = 0` and suppressed a possible C1 on 2026-09-02 (see Entry 002).
+
+Corrected in v1.3. `detect_source_gaps()` flags any ticker whose most recent
+observation is more than four days before the target date, and the full
+`run_metadata` table is regenerated to JSON on every run so that the two
+cannot diverge.
+
+### 3. Horizon calendar did not match §4 "trading days"
+
+Implementing §1 exposed a defect that had been present all along and that was
+invisible while no values were computed.
+
+Horizons were counted on the merged price index — the union of every ticker's
+dates. Brent trades on the ICE calendar, which includes sessions when the US
+equity market is closed. Of 10,080 days in the merged index, **188** are days
+on which Brent traded and every outcome ticker was absent: MLK Day,
+Presidents' Day, Independence Day, Labor Day, Thanksgiving.
+
+Two consequences:
+
+- Where a target date landed on one of those 188 days, every outcome was NaN.
+  1,793 rows were affected.
+- Where the interval merely spanned one, "20 trading days" was 19 market
+  sessions. At h=20 this affected roughly a third of all rows.
+
+Corrected in v1.4: horizons are counted on market sessions only (9,892 of the
+10,080). Effects:
+
+| | before | after |
+|---|---|---|
+| all-NaN `ready` rows | 1,793 | 0 |
+| C1 → VIX +20d, n | 432 | 444 |
+| C1 → VIX +20d, mean | +1.737 | +1.697 |
+| `target_date` values changed | — | 15,941 (17.0%) |
+
+By horizon, the share of `target_date` values that changed: h=1 2.0%,
+h=5 8.9%, h=10 16.9%, h=15 24.4%, h=20 32.6%.
+
+**Detection is unaffected.** TDA features and control indicators are computed
+on each ticker's own `dropna()` index, not on the merged index. Event counts
+after the correction are unchanged from v1.2: A1 148, A2 4, B1 24, C1 445,
+D1 23, F1 12,216, F2 5,207, G1 736. `verify_history.py` continues to report
+the historical portion of `public/events_log.csv` as byte-identical across all
+prior commits.
+
+This defect could not have been found by inspection of the outputs, because
+the affected column was empty. It became visible only when the values it
+governed were computed. A protocol clause that is documented but not executed
+does not merely fail to produce evidence — it conceals defects in the
+machinery around it.
+
+### 4. Three decisions recorded
+
+**`tda_monitoring_rules.md` was not edited.** The natural place for an
+implementation note is §4 itself. That file currently has exactly one commit,
+`2df4af0d` (2026-05-16), and that fact — the pre-registration document has
+never been modified — is the strongest single piece of evidence this protocol
+has. Adding a note would make it two commits. The note is recorded here
+instead. The detection rules and the §6 frozen parameters are untouched in
+either case.
+
+**The 188 stale rows in `decoupling_status.csv` were not removed.** Those
+dates appear as rows in which `vix_sma10` and `delta_cnt` are both NaN, since
+VIX did not trade. `decoupling_active` is therefore necessarily 0 and no
+detection is affected. Removing them would delete published rows, which is a
+worse outcome than leaving a harmless artefact in place. They remain.
+
+**Code version was bumped, rules version was not.** `monitor_tda.py` went
+v1.2 → v1.3 → v1.4 so that each change is traceable in `run_metadata`. These
+are code versions. `tda_monitoring_rules.md` governs the detection rules and
+remains v1.0, because no detection rule and no frozen parameter changed.
+
+### 5. This entry's type is outside the §7.2-4 status vocabulary
+
+§7.2-4 permits four status values: `exploratory`, `re-validation pending`,
+`false positive confirmed`, `promoted to vX.X`. All four describe the standing
+of an observed market pattern. None applies to an implementation record: the
+findings here are not exploratory (they are settled), and they were acted upon
+rather than left pending.
+
+Rather than coerce one of the four or invent a fifth — the error corrected in
+Entry 003 — this entry carries no status value from that list, and the gap is
+recorded as something the README and §7.2 need to address. The log's stated
+purpose is the recording of exploratory market observations; this entry, and
+part of Entry 003, widen that purpose to operational and implementation
+records. That widening is deliberate and is noted here so that it is not
+mistaken for drift.
+
+---
