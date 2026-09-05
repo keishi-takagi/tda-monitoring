@@ -252,3 +252,97 @@ weight only alongside a record of the temptations that were declined.
 This entry is filed as one such record.
 
 ---
+
+## Entry 003 — 2026-09-05 — Correction and required cross-check for Entry 002
+
+**Date of discovery:** 2026-09-05
+**Refers to:** Entry 002 (2026-09-03)
+**Observed period:** 2026-08-03 through 2026-09-02 (unchanged from Entry 002)
+**Status:** `exploratory`
+
+This entry corrects the status field of Entry 002 and supplies a required
+field that Entry 002 omitted. Per §7.2-1 and §7.2-2, Entry 002 is left
+unmodified and this transition is recorded as a new entry.
+
+### 1. Status correction
+
+Entry 002 was filed with the status string
+`Exploratory — no rule change made`.
+
+That string is not one of the four permitted values enumerated in §7.2-4
+(`exploratory`, `re-validation pending`, `false positive confirmed`,
+`promoted to vX.X`). The correct value for the observation recorded in
+Entry 002 is **`exploratory`**.
+
+`re-validation pending` was considered and rejected: it implies an
+intention to promote the pattern to a rule, and no such intention exists.
+The substantive decision described in Entry 002 is unchanged —
+`tda_monitoring_rules.md` remains at v1.0 and the strict inequality
+`dcnt < −12` in §2.4 remains exactly as pre-registered.
+
+### 2. Cross-check against existing frameworks (required by §7.2-3)
+
+Entry 002 omitted this field. It is supplied here.
+
+**Paper #6 zone classification** (Fear Habituation and Structural
+Collapse), computed over the same 23 trading days:
+
+| Component | Range over the window | Score |
+|---|---|---|
+| Drawdown from 252-day rolling peak (SPY) | −2.07% to 0.00% | dd_score = 0 |
+| SMA50/200 ratio | 1.063 – 1.065 | sma_score = 0 |
+| VIX level | 14.2 – 16.5 | vix_score = 0 |
+| Realised volatility, 20d annualised | 7.2% – 14.5% | vol_score = 0 |
+
+structural_risk = 0, fear_risk = 0 for all 23 days → **SAFE zone
+throughout**. SAFE is the baseline regime in that framework (33-year mean
+250-day forward S&P 500 return +11.03%).
+
+**Other detection categories in the same window:**
+
+| Category | Count |
+|---|---|
+| A1, A2, B1, D1 | 0 |
+| G1 (VIX > 30) | 0 |
+| C1 | 1 (2026-08-19) |
+| F1 (RSI extreme) | 21 |
+| F2 (Bollinger 2σ) | 13 |
+
+F1/F2 are classical controls and fired across seven tickers (RSP 10,
+SPY 8, HYG 5, IWM 4, QQQ 3, TNX 3, VIX 1) at ordinary rates.
+
+**Interpretation.** The window was unremarkable under the Paper #6
+two-axis framework and under every TDA rule except C1. The near-threshold
+persistence documented in Entry 002 occurred in a period that no other
+framework in this protocol flagged. This is the inverse of Entry 001,
+where three classical divergences fired simultaneously and the TDA
+features did not corroborate them.
+
+### 3. Commit hygiene failure
+
+Entry 002 was committed as `4c9fc167` (2026-09-04) with the message
+`Daily update 2026-09-04` and without a signature.
+
+Cause: the daily driver stages the entire `public/` directory before
+committing. `public/tda_events_log.md` is a hand-written file governed by
+§7.2, but it sits inside that directory, so the automated run picked up
+the manually placed Entry 002 and committed it under the daily-update
+message. This violates §7.2-6 (commit message format) and §7.2-7 (GPG
+signing).
+
+The commit had already been pushed, and a later commit was built on top of
+it. Amending would require a force-push, which §7.2-7 prohibits and which
+would invalidate the commit hashes that currently carry the protocol's
+integrity evidence. The failure is therefore recorded rather than erased.
+
+Remediation: `public/tda_events_log.md` is excluded from the automated
+staging path, and commits to it are made manually with the §7.2-6 message
+format and a signature.
+
+### 4. No rule change
+
+No change to `tda_monitoring_rules.md`. This entry corrects a metadata
+field and supplies an omitted required field; it makes no claim about
+market behaviour and modifies no detection rule.
+
+---
