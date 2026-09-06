@@ -1,0 +1,48 @@
+cff-version: 1.2.0
+title: "TDA Real-Time Monitoring: a pre-registered protocol for topological anomaly detection in financial markets"
+message: "If you use this repository, please cite it as below."
+type: software
+authors:
+  - family-names: Takagi
+    given-names: Keishi
+    email: keishi6903@gmail.com
+    orcid: "https://orcid.org/0009-0004-5733-333X"
+repository-code: "https://github.com/keishi-takagi/tda-monitoring"
+abstract: >-
+  A pre-registered real-time monitoring protocol for topological anomalies in
+  financial markets, companion to the Takagi (2026) TDA paper series.
+  Detection rules and computation parameters were fixed in the initial commit
+  and are versioned separately from the implementation. The repository
+  accumulates an out-of-sample record of rule-triggered detections, per-run
+  metadata, and an append-only log of observations and of occasions on which
+  the protocol's own discipline was tested.
+keywords:
+  - topological data analysis
+  - persistent homology
+  - pre-registration
+  - financial markets
+  - out-of-sample validation
+license: MIT
+license-url: "https://github.com/keishi-takagi/tda-monitoring/blob/main/LICENSE"
+references:
+  - type: article
+    title: "Topological structure changes in credit markets lead equity returns: Why the HYG TDA three-axis framework works"
+    authors:
+      - family-names: Takagi
+        given-names: Keishi
+    year: 2026
+    notes: "SSRN Working Paper, Abstract ID 6453878"
+  - type: article
+    title: "The Energy Landscape of Credit Markets: Chemical Potential as a Topological Measure of Financial Market Structure"
+    authors:
+      - family-names: Takagi
+        given-names: Keishi
+    year: 2026
+    notes: "SSRN Working Paper"
+  - type: article
+    title: "Topological Pre-Signaling of Energy Shocks: Evidence from Brent Crude and VIX Persistent Homology"
+    authors:
+      - family-names: Takagi
+        given-names: Keishi
+    year: 2026
+    notes: "SSRN Working Paper"
