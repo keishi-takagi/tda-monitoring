@@ -599,3 +599,127 @@ August 2026* is a statement about the market, and this entry does not support
 it — the August outcome was determined by `dcnt`.
 
 ---
+
+## Entry 006 — 2026-09-08 — VIX observations on non-market days; calendar left unchanged
+
+**Date of discovery:** 2026-09-08
+**Observed period:** 1990-01-02 through 2026-09-07
+**Status:** `exploratory`
+
+### Observation
+
+On 2026-09-07, a US market holiday (Labor Day), the price table received a VIX
+observation while every equity and yield ticker was absent. The monitor
+therefore treated the date as a session: TDA features were computed, and
+`decoupling_status.csv` gained a row.
+
+| date | brent_yoy | vix_sma10 | dcnt | cond_brent | cond_vix | cond_dcnt | active |
+|---|---|---|---|---|---|---|---|
+| 2026-09-07 | NaN | 15.021 | **−14** | 0 | 1 | **1** | 0 |
+
+Two of the three C1 conditions were satisfied on a day the US equity market
+was closed. C1 did not fire only because Brent was unavailable — Brent
+publishes weekly and its last observation at the time of the run was
+2026-09-01, seven days before the target date.
+
+The VIX value is not a carried-forward duplicate. VIX closed at 14.53 on the
+prior session (2026-09-04) and the 2026-09-07 observation is 15.30, a 5.3%
+change.
+
+### Frequency
+
+Days on which VIX has an observation and all of SPY, QQQ, IWM, RSP, HYG and
+TNX are absent, over the full history:
+
+| period | count |
+|---|---|
+| 1990–1993 | 10 |
+| 1994–2025 | **0** |
+| 2026 | 3 |
+
+Twelve days in 10,082. The 2026 dates are 05-25 (Memorial Day), 07-03
+(Independence Day observed) and 09-07 (Labor Day). The 1990–1993 dates are
+MLK Day, Columbus Day and Veterans Day observations from the early years of
+the VIX series.
+
+A gap of thirty-two years followed by three occurrences in one year indicates
+a change on the data-acquisition side in 2026 rather than a long-standing
+property of the series. The run log for 2026-09-08 shows `^VIX` returning ten
+rows through 2026-09-07 while every other ticker returned nine rows through
+2026-09-04.
+
+No event of any category has ever fired on one of these twelve dates. On the
+two prior 2026 occurrences `dcnt` was −11 (05-25) and −12 (07-03), neither
+satisfying the strict `< −12` threshold. 2026-09-07 is the first occurrence at
+which a non-market day satisfied that condition.
+
+On 2026-07-03 Brent also reported (68.68). A day on which both VIX and Brent
+report while the equity market is closed is therefore not hypothetical, and on
+such a day all three C1 conditions could in principle be satisfied. On
+2026-07-03 `brent_yoy` was −3.31% and the question did not arise.
+
+### Relation to the v1.4 calendar correction
+
+Entry 004 records a correction to the forward-return horizon calendar: 188
+days on which Brent traded and no outcome ticker did were excluded from the
+session count. That correction defined a session as a day on which **at least
+one outcome ticker** has data. VIX is an outcome ticker, so the twelve days
+described here were not excluded by it and are not excluded now.
+
+The two cases are not comparable in scale. The Brent-only days numbered 188
+and left every outcome column empty, producing 1,793 tracking rows with no
+measurable outcome at all. These twelve leave seven of eight outcome columns
+empty but `diff_VIX` populated, and produce no all-empty rows.
+
+### Why the calendar is not being changed
+
+**Technical.** The defect cannot be corrected at its source. `dcnt` is
+computed on VIX's own index; removing the twelve dates from that series would
+shift every W=20 and W=60 window that follows them. Ten of the twelve fall in
+1990–1993, so the change would propagate through thirty-three years of
+detection output. The historical portion of `public/events_log.csv` is
+currently byte-identical across every commit, and that fact is the strongest
+verifiable evidence this protocol has. It would not survive the correction.
+Two events — an F2 in 1990 and an F1 in 1992 — also sit on non-market dates
+and would have to be deleted.
+
+A narrower change was considered: leaving the input series alone and
+redefining the forward-return calendar to exclude VIX. That is technically
+possible and would alter only `target_date`. It would not close the exposure
+that prompted this entry, because `decoupling_status.csv` is generated over
+the full index and a holiday on which both VIX and Brent report would still
+satisfy the C1 conditions. A change that does not address the concern used to
+justify it should not be made.
+
+**Procedural.** The exposure was identified on 2026-09-07, and the C1 status
+of 2026-09-07 is at this moment undetermined, pending Brent publication. Two
+of three conditions are satisfied. Modifying the calendar while a detection
+hangs on it — however the modification is scoped — is the situation Entry 002
+was written to avoid. The v1.4 correction was made when nothing turned on it;
+this one would not be.
+
+`tda_monitoring_rules.md` remains v1.0. `monitor_tda.py` remains v1.4. No
+detection rule, no frozen parameter, and no calendar definition is changed by
+this entry.
+
+### Cross-check against existing frameworks (§7.2-3)
+
+For 2026-09-07 no Paper #6 zone classification is computable: the
+classification requires SPY drawdown, the SMA50/200 ratio and 20-day realised
+volatility, none of which exists for a day the equity market did not trade.
+This is itself consistent with the observation — the date is not a session by
+any measure other than the presence of a VIX print.
+
+Across the twelve dates, no rule in any category has fired: A1, A2, B1, C1,
+D1 and G1 zero, F1 one (1992), F2 one (1990).
+
+### Follow-up
+
+This entry will require a follow-up when Brent publishes and the C1 status of
+2026-09-02 through 2026-09-07 is resolved. Four consecutive dates
+(2026-09-02, 09-03, 09-04, 09-07) currently satisfy `cond_vix_20` and
+`cond_delta_neg12` with `brent_yoy` unavailable, and `dcnt` has deepened from
+−13 to −14 across them. Whatever those dates receive will be produced by the
+rules as pre-registered, under the calendar as it stands today.
+
+---
