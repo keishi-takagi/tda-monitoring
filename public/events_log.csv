@@ -18803,3 +18803,8 @@ F2,Bollinger Band breach (control),2,ticker=TNX bb_z=2.45,2026-09-01,TNX
 F2,Bollinger Band breach (control),2,ticker=HYG bb_z=-2.04,2026-09-02,HYG
 F2,Bollinger Band breach (control),2,ticker=TNX bb_z=2.12,2026-09-02,TNX
 F2,Bollinger Band breach (control),2,ticker=RSP bb_z=-2.31,2026-09-08,RSP
+F1,RSI extreme (control),2,ticker=HYG rsi=27.6,2026-09-09,HYG
+F1,RSI extreme (control),2,ticker=RSP rsi=27.3,2026-09-09,RSP
+F1,RSI extreme (control),2,ticker=TNX rsi=70.4,2026-09-09,TNX
+F2,Bollinger Band breach (control),2,ticker=RSP bb_z=-2.65,2026-09-09,RSP
+F2,Bollinger Band breach (control),2,ticker=VIX9D bb_z=2.06,2026-09-09,VIX9D
