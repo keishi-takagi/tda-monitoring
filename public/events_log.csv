@@ -18800,11 +18800,27 @@ F2,Bollinger Band breach (control),2,ticker=HYG bb_z=-2.51,2026-09-01,HYG
 F2,Bollinger Band breach (control),2,ticker=IWM bb_z=-2.63,2026-09-01,IWM
 F2,Bollinger Band breach (control),2,ticker=RSP bb_z=-2.35,2026-09-01,RSP
 F2,Bollinger Band breach (control),2,ticker=TNX bb_z=2.45,2026-09-01,TNX
+C1,Topological Decoupling (Energy TDA),3,brent_yoy=44.0 vix_sma10=15.3 delta_cnt=-13,2026-09-02,VIX
 F2,Bollinger Band breach (control),2,ticker=HYG bb_z=-2.04,2026-09-02,HYG
 F2,Bollinger Band breach (control),2,ticker=TNX bb_z=2.12,2026-09-02,TNX
+C1,Topological Decoupling (Energy TDA),3,brent_yoy=51.4 vix_sma10=15.1 delta_cnt=-13,2026-09-03,VIX
+C1,Topological Decoupling (Energy TDA),3,brent_yoy=57.5 vix_sma10=15.1 delta_cnt=-13,2026-09-04,VIX
+C1,Topological Decoupling (Energy TDA),3,brent_yoy=59.6 vix_sma10=15.0 delta_cnt=-14,2026-09-07,VIX
+C1,Topological Decoupling (Energy TDA),3,brent_yoy=56.1 vix_sma10=15.0 delta_cnt=-14,2026-09-08,VIX
 F2,Bollinger Band breach (control),2,ticker=RSP bb_z=-2.31,2026-09-08,RSP
+C1,Topological Decoupling (Energy TDA),3,brent_yoy=61.9 vix_sma10=15.2 delta_cnt=-15,2026-09-09,VIX
 F1,RSI extreme (control),2,ticker=HYG rsi=27.6,2026-09-09,HYG
 F1,RSI extreme (control),2,ticker=RSP rsi=27.3,2026-09-09,RSP
 F1,RSI extreme (control),2,ticker=TNX rsi=70.4,2026-09-09,TNX
 F2,Bollinger Band breach (control),2,ticker=RSP bb_z=-2.65,2026-09-09,RSP
 F2,Bollinger Band breach (control),2,ticker=VIX9D bb_z=2.06,2026-09-09,VIX9D
+A1,HHH cell activated (Paper #8),3,cnt_z=1.90 ent_z=2.01 euler_z=1.04,2026-09-10,VIX
+F1,RSI extreme (control),2,ticker=HYG rsi=24.4,2026-09-10,HYG
+F1,RSI extreme (control),2,ticker=RSP rsi=27.8,2026-09-10,RSP
+F1,RSI extreme (control),2,ticker=TNX rsi=74.1,2026-09-10,TNX
+F2,Bollinger Band breach (control),2,ticker=HYG bb_z=-2.53,2026-09-10,HYG
+F2,Bollinger Band breach (control),2,ticker=IWM bb_z=-2.07,2026-09-10,IWM
+F2,Bollinger Band breach (control),2,ticker=RSP bb_z=-2.54,2026-09-10,RSP
+F2,Bollinger Band breach (control),2,ticker=TNX bb_z=2.73,2026-09-10,TNX
+F2,Bollinger Band breach (control),2,ticker=VIX bb_z=2.83,2026-09-10,VIX
+F2,Bollinger Band breach (control),2,ticker=VIX9D bb_z=2.72,2026-09-10,VIX9D
