@@ -18824,3 +18824,9 @@ F2,Bollinger Band breach (control),2,ticker=RSP bb_z=-2.54,2026-09-10,RSP
 F2,Bollinger Band breach (control),2,ticker=TNX bb_z=2.73,2026-09-10,TNX
 F2,Bollinger Band breach (control),2,ticker=VIX bb_z=2.83,2026-09-10,VIX
 F2,Bollinger Band breach (control),2,ticker=VIX9D bb_z=2.72,2026-09-10,VIX9D
+A1,HHH cell activated (Paper #8),3,cnt_z=1.88 ent_z=2.03 euler_z=1.03,2026-09-11,VIX
+F1,RSI extreme (control),2,ticker=HYG rsi=22.1,2026-09-11,HYG
+F1,RSI extreme (control),2,ticker=RSP rsi=29.2,2026-09-11,RSP
+F1,RSI extreme (control),2,ticker=TNX rsi=73.6,2026-09-11,TNX
+F2,Bollinger Band breach (control),2,ticker=HYG bb_z=-2.19,2026-09-11,HYG
+F2,Bollinger Band breach (control),2,ticker=TNX bb_z=2.48,2026-09-11,TNX
