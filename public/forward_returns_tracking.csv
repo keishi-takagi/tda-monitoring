@@ -94021,7 +94021,7 @@ signal_date,signal_category,signal_event,signal_ticker,horizon_d,target_date,sta
 2026-09-02,F2,Bollinger Band breach (control),TNX,20,,pending,,,,,,,,
 2026-09-03,C1,Topological Decoupling (Energy TDA),VIX,1,2026-09-04,ready,-0.06311756462711315,0.21000003814697266,-0.3854237146576178,0.1797537995484877,0.27778966680334083,-0.4771656610751518,0.28999996185302734,0.021999835968017578
 2026-09-03,C1,Topological Decoupling (Energy TDA),VIX,5,2026-09-10,ready,-0.7448508328619319,3.520000457763672,-1.984035355663183,-1.251268784063686,-2.791233053227893,-3.1265643205622973,6.020000457763672,0.18199968338012695
-2026-09-03,C1,Topological Decoupling (Energy TDA),VIX,10,,pending,,,,,,,,
+2026-09-03,C1,Topological Decoupling (Energy TDA),VIX,10,2026-09-17,ready,-0.6186060717498276,1.119999885559082,-1.3671000630978924,-0.10450485848088054,-3.3063483467948074,-3.0629426947014204,1.7100000381469727,0.18499994277954102
 2026-09-03,C1,Topological Decoupling (Energy TDA),VIX,15,,pending,,,,,,,,
 2026-09-03,C1,Topological Decoupling (Energy TDA),VIX,20,,pending,,,,,,,,
 2026-09-04,C1,Topological Decoupling (Energy TDA),VIX,1,2026-09-07,ready,,0.7700004577636719,,,,,,
@@ -94075,57 +94075,57 @@ signal_date,signal_category,signal_event,signal_ticker,horizon_d,target_date,sta
 2026-09-09,F2,Bollinger Band breach (control),VIX9D,15,,pending,,,,,,,,
 2026-09-09,F2,Bollinger Band breach (control),VIX9D,20,,pending,,,,,,,,
 2026-09-10,A1,HHH cell activated (Paper #8),VIX,1,2026-09-11,ready,-0.02544425306804099,-2.0,0.8524287494320992,0.8734428904149771,0.4136322855456953,0.7974841501358299,-3.2300004959106445,0.031000137329101562
-2026-09-10,A1,HHH cell activated (Paper #8),VIX,5,,pending,,,,,,,,
+2026-09-10,A1,HHH cell activated (Paper #8),VIX,5,2026-09-17,ready,0.12719215292249508,-2.40000057220459,0.6294232728351057,1.1612948454751804,-0.5299062108759967,0.0656749968808823,-4.310000419616699,0.0030002593994140625
 2026-09-10,A1,HHH cell activated (Paper #8),VIX,10,,pending,,,,,,,,
 2026-09-10,A1,HHH cell activated (Paper #8),VIX,15,,pending,,,,,,,,
 2026-09-10,A1,HHH cell activated (Paper #8),VIX,20,,pending,,,,,,,,
 2026-09-10,C1,Topological Decoupling (Energy TDA),VIX,1,2026-09-11,ready,-0.02544425306804099,-2.0,0.8524287494320992,0.8734428904149771,0.4136322855456953,0.7974841501358299,-3.2300004959106445,0.031000137329101562
-2026-09-10,C1,Topological Decoupling (Energy TDA),VIX,5,,pending,,,,,,,,
+2026-09-10,C1,Topological Decoupling (Energy TDA),VIX,5,2026-09-17,ready,0.12719215292249508,-2.40000057220459,0.6294232728351057,1.1612948454751804,-0.5299062108759967,0.0656749968808823,-4.310000419616699,0.0030002593994140625
 2026-09-10,C1,Topological Decoupling (Energy TDA),VIX,10,,pending,,,,,,,,
 2026-09-10,C1,Topological Decoupling (Energy TDA),VIX,15,,pending,,,,,,,,
 2026-09-10,C1,Topological Decoupling (Energy TDA),VIX,20,,pending,,,,,,,,
 2026-09-10,F1,RSI extreme (control),HYG,1,2026-09-11,ready,-0.02544425306804099,-2.0,0.8524287494320992,0.8734428904149771,0.4136322855456953,0.7974841501358299,-3.2300004959106445,0.031000137329101562
-2026-09-10,F1,RSI extreme (control),HYG,5,,pending,,,,,,,,
+2026-09-10,F1,RSI extreme (control),HYG,5,2026-09-17,ready,0.12719215292249508,-2.40000057220459,0.6294232728351057,1.1612948454751804,-0.5299062108759967,0.0656749968808823,-4.310000419616699,0.0030002593994140625
 2026-09-10,F1,RSI extreme (control),HYG,10,,pending,,,,,,,,
 2026-09-10,F1,RSI extreme (control),HYG,15,,pending,,,,,,,,
 2026-09-10,F1,RSI extreme (control),HYG,20,,pending,,,,,,,,
 2026-09-10,F1,RSI extreme (control),RSP,1,2026-09-11,ready,-0.02544425306804099,-2.0,0.8524287494320992,0.8734428904149771,0.4136322855456953,0.7974841501358299,-3.2300004959106445,0.031000137329101562
-2026-09-10,F1,RSI extreme (control),RSP,5,,pending,,,,,,,,
+2026-09-10,F1,RSI extreme (control),RSP,5,2026-09-17,ready,0.12719215292249508,-2.40000057220459,0.6294232728351057,1.1612948454751804,-0.5299062108759967,0.0656749968808823,-4.310000419616699,0.0030002593994140625
 2026-09-10,F1,RSI extreme (control),RSP,10,,pending,,,,,,,,
 2026-09-10,F1,RSI extreme (control),RSP,15,,pending,,,,,,,,
 2026-09-10,F1,RSI extreme (control),RSP,20,,pending,,,,,,,,
 2026-09-10,F1,RSI extreme (control),TNX,1,2026-09-11,ready,-0.02544425306804099,-2.0,0.8524287494320992,0.8734428904149771,0.4136322855456953,0.7974841501358299,-3.2300004959106445,0.031000137329101562
-2026-09-10,F1,RSI extreme (control),TNX,5,,pending,,,,,,,,
+2026-09-10,F1,RSI extreme (control),TNX,5,2026-09-17,ready,0.12719215292249508,-2.40000057220459,0.6294232728351057,1.1612948454751804,-0.5299062108759967,0.0656749968808823,-4.310000419616699,0.0030002593994140625
 2026-09-10,F1,RSI extreme (control),TNX,10,,pending,,,,,,,,
 2026-09-10,F1,RSI extreme (control),TNX,15,,pending,,,,,,,,
 2026-09-10,F1,RSI extreme (control),TNX,20,,pending,,,,,,,,
 2026-09-10,F2,Bollinger Band breach (control),HYG,1,2026-09-11,ready,-0.02544425306804099,-2.0,0.8524287494320992,0.8734428904149771,0.4136322855456953,0.7974841501358299,-3.2300004959106445,0.031000137329101562
-2026-09-10,F2,Bollinger Band breach (control),HYG,5,,pending,,,,,,,,
+2026-09-10,F2,Bollinger Band breach (control),HYG,5,2026-09-17,ready,0.12719215292249508,-2.40000057220459,0.6294232728351057,1.1612948454751804,-0.5299062108759967,0.0656749968808823,-4.310000419616699,0.0030002593994140625
 2026-09-10,F2,Bollinger Band breach (control),HYG,10,,pending,,,,,,,,
 2026-09-10,F2,Bollinger Band breach (control),HYG,15,,pending,,,,,,,,
 2026-09-10,F2,Bollinger Band breach (control),HYG,20,,pending,,,,,,,,
 2026-09-10,F2,Bollinger Band breach (control),IWM,1,2026-09-11,ready,-0.02544425306804099,-2.0,0.8524287494320992,0.8734428904149771,0.4136322855456953,0.7974841501358299,-3.2300004959106445,0.031000137329101562
-2026-09-10,F2,Bollinger Band breach (control),IWM,5,,pending,,,,,,,,
+2026-09-10,F2,Bollinger Band breach (control),IWM,5,2026-09-17,ready,0.12719215292249508,-2.40000057220459,0.6294232728351057,1.1612948454751804,-0.5299062108759967,0.0656749968808823,-4.310000419616699,0.0030002593994140625
 2026-09-10,F2,Bollinger Band breach (control),IWM,10,,pending,,,,,,,,
 2026-09-10,F2,Bollinger Band breach (control),IWM,15,,pending,,,,,,,,
 2026-09-10,F2,Bollinger Band breach (control),IWM,20,,pending,,,,,,,,
 2026-09-10,F2,Bollinger Band breach (control),RSP,1,2026-09-11,ready,-0.02544425306804099,-2.0,0.8524287494320992,0.8734428904149771,0.4136322855456953,0.7974841501358299,-3.2300004959106445,0.031000137329101562
-2026-09-10,F2,Bollinger Band breach (control),RSP,5,,pending,,,,,,,,
+2026-09-10,F2,Bollinger Band breach (control),RSP,5,2026-09-17,ready,0.12719215292249508,-2.40000057220459,0.6294232728351057,1.1612948454751804,-0.5299062108759967,0.0656749968808823,-4.310000419616699,0.0030002593994140625
 2026-09-10,F2,Bollinger Band breach (control),RSP,10,,pending,,,,,,,,
 2026-09-10,F2,Bollinger Band breach (control),RSP,15,,pending,,,,,,,,
 2026-09-10,F2,Bollinger Band breach (control),RSP,20,,pending,,,,,,,,
 2026-09-10,F2,Bollinger Band breach (control),TNX,1,2026-09-11,ready,-0.02544425306804099,-2.0,0.8524287494320992,0.8734428904149771,0.4136322855456953,0.7974841501358299,-3.2300004959106445,0.031000137329101562
-2026-09-10,F2,Bollinger Band breach (control),TNX,5,,pending,,,,,,,,
+2026-09-10,F2,Bollinger Band breach (control),TNX,5,2026-09-17,ready,0.12719215292249508,-2.40000057220459,0.6294232728351057,1.1612948454751804,-0.5299062108759967,0.0656749968808823,-4.310000419616699,0.0030002593994140625
 2026-09-10,F2,Bollinger Band breach (control),TNX,10,,pending,,,,,,,,
 2026-09-10,F2,Bollinger Band breach (control),TNX,15,,pending,,,,,,,,
 2026-09-10,F2,Bollinger Band breach (control),TNX,20,,pending,,,,,,,,
 2026-09-10,F2,Bollinger Band breach (control),VIX,1,2026-09-11,ready,-0.02544425306804099,-2.0,0.8524287494320992,0.8734428904149771,0.4136322855456953,0.7974841501358299,-3.2300004959106445,0.031000137329101562
-2026-09-10,F2,Bollinger Band breach (control),VIX,5,,pending,,,,,,,,
+2026-09-10,F2,Bollinger Band breach (control),VIX,5,2026-09-17,ready,0.12719215292249508,-2.40000057220459,0.6294232728351057,1.1612948454751804,-0.5299062108759967,0.0656749968808823,-4.310000419616699,0.0030002593994140625
 2026-09-10,F2,Bollinger Band breach (control),VIX,10,,pending,,,,,,,,
 2026-09-10,F2,Bollinger Band breach (control),VIX,15,,pending,,,,,,,,
 2026-09-10,F2,Bollinger Band breach (control),VIX,20,,pending,,,,,,,,
 2026-09-10,F2,Bollinger Band breach (control),VIX9D,1,2026-09-11,ready,-0.02544425306804099,-2.0,0.8524287494320992,0.8734428904149771,0.4136322855456953,0.7974841501358299,-3.2300004959106445,0.031000137329101562
-2026-09-10,F2,Bollinger Band breach (control),VIX9D,5,,pending,,,,,,,,
+2026-09-10,F2,Bollinger Band breach (control),VIX9D,5,2026-09-17,ready,0.12719215292249508,-2.40000057220459,0.6294232728351057,1.1612948454751804,-0.5299062108759967,0.0656749968808823,-4.310000419616699,0.0030002593994140625
 2026-09-10,F2,Bollinger Band breach (control),VIX9D,10,,pending,,,,,,,,
 2026-09-10,F2,Bollinger Band breach (control),VIX9D,15,,pending,,,,,,,,
 2026-09-10,F2,Bollinger Band breach (control),VIX9D,20,,pending,,,,,,,,
@@ -94224,28 +94224,48 @@ signal_date,signal_category,signal_event,signal_ticker,horizon_d,target_date,sta
 2026-09-15,F2,Bollinger Band breach (control),HYG,10,,pending,,,,,,,,
 2026-09-15,F2,Bollinger Band breach (control),HYG,15,,pending,,,,,,,,
 2026-09-15,F2,Bollinger Band breach (control),HYG,20,,pending,,,,,,,,
-2026-09-16,F1,RSI extreme (control),HYG,1,,pending,,,,,,,,
+2026-09-16,F1,RSI extreme (control),HYG,1,2026-09-17,ready,0.3825593710312214,-2.2699995040893555,1.1338754633487547,1.73118582049816,0.5318326206797064,0.4852076433106367,-4.0099992752075195,-0.05900001525878906
 2026-09-16,F1,RSI extreme (control),HYG,5,,pending,,,,,,,,
 2026-09-16,F1,RSI extreme (control),HYG,10,,pending,,,,,,,,
 2026-09-16,F1,RSI extreme (control),HYG,15,,pending,,,,,,,,
 2026-09-16,F1,RSI extreme (control),HYG,20,,pending,,,,,,,,
-2026-09-16,F1,RSI extreme (control),IWM,1,,pending,,,,,,,,
+2026-09-16,F1,RSI extreme (control),IWM,1,2026-09-17,ready,0.3825593710312214,-2.2699995040893555,1.1338754633487547,1.73118582049816,0.5318326206797064,0.4852076433106367,-4.0099992752075195,-0.05900001525878906
 2026-09-16,F1,RSI extreme (control),IWM,5,,pending,,,,,,,,
 2026-09-16,F1,RSI extreme (control),IWM,10,,pending,,,,,,,,
 2026-09-16,F1,RSI extreme (control),IWM,15,,pending,,,,,,,,
 2026-09-16,F1,RSI extreme (control),IWM,20,,pending,,,,,,,,
-2026-09-16,F1,RSI extreme (control),RSP,1,,pending,,,,,,,,
+2026-09-16,F1,RSI extreme (control),RSP,1,2026-09-17,ready,0.3825593710312214,-2.2699995040893555,1.1338754633487547,1.73118582049816,0.5318326206797064,0.4852076433106367,-4.0099992752075195,-0.05900001525878906
 2026-09-16,F1,RSI extreme (control),RSP,5,,pending,,,,,,,,
 2026-09-16,F1,RSI extreme (control),RSP,10,,pending,,,,,,,,
 2026-09-16,F1,RSI extreme (control),RSP,15,,pending,,,,,,,,
 2026-09-16,F1,RSI extreme (control),RSP,20,,pending,,,,,,,,
-2026-09-16,F1,RSI extreme (control),TNX,1,,pending,,,,,,,,
+2026-09-16,F1,RSI extreme (control),TNX,1,2026-09-17,ready,0.3825593710312214,-2.2699995040893555,1.1338754633487547,1.73118582049816,0.5318326206797064,0.4852076433106367,-4.0099992752075195,-0.05900001525878906
 2026-09-16,F1,RSI extreme (control),TNX,5,,pending,,,,,,,,
 2026-09-16,F1,RSI extreme (control),TNX,10,,pending,,,,,,,,
 2026-09-16,F1,RSI extreme (control),TNX,15,,pending,,,,,,,,
 2026-09-16,F1,RSI extreme (control),TNX,20,,pending,,,,,,,,
-2026-09-16,F2,Bollinger Band breach (control),SPY,1,,pending,,,,,,,,
+2026-09-16,F2,Bollinger Band breach (control),SPY,1,2026-09-17,ready,0.3825593710312214,-2.2699995040893555,1.1338754633487547,1.73118582049816,0.5318326206797064,0.4852076433106367,-4.0099992752075195,-0.05900001525878906
 2026-09-16,F2,Bollinger Band breach (control),SPY,5,,pending,,,,,,,,
 2026-09-16,F2,Bollinger Band breach (control),SPY,10,,pending,,,,,,,,
 2026-09-16,F2,Bollinger Band breach (control),SPY,15,,pending,,,,,,,,
 2026-09-16,F2,Bollinger Band breach (control),SPY,20,,pending,,,,,,,,
+2026-09-17,F1,RSI extreme (control),HYG,1,,pending,,,,,,,,
+2026-09-17,F1,RSI extreme (control),HYG,5,,pending,,,,,,,,
+2026-09-17,F1,RSI extreme (control),HYG,10,,pending,,,,,,,,
+2026-09-17,F1,RSI extreme (control),HYG,15,,pending,,,,,,,,
+2026-09-17,F1,RSI extreme (control),HYG,20,,pending,,,,,,,,
+2026-09-17,F1,RSI extreme (control),IWM,1,,pending,,,,,,,,
+2026-09-17,F1,RSI extreme (control),IWM,5,,pending,,,,,,,,
+2026-09-17,F1,RSI extreme (control),IWM,10,,pending,,,,,,,,
+2026-09-17,F1,RSI extreme (control),IWM,15,,pending,,,,,,,,
+2026-09-17,F1,RSI extreme (control),IWM,20,,pending,,,,,,,,
+2026-09-17,F1,RSI extreme (control),RSP,1,,pending,,,,,,,,
+2026-09-17,F1,RSI extreme (control),RSP,5,,pending,,,,,,,,
+2026-09-17,F1,RSI extreme (control),RSP,10,,pending,,,,,,,,
+2026-09-17,F1,RSI extreme (control),RSP,15,,pending,,,,,,,,
+2026-09-17,F1,RSI extreme (control),RSP,20,,pending,,,,,,,,
+2026-09-17,F1,RSI extreme (control),TNX,1,,pending,,,,,,,,
+2026-09-17,F1,RSI extreme (control),TNX,5,,pending,,,,,,,,
+2026-09-17,F1,RSI extreme (control),TNX,10,,pending,,,,,,,,
+2026-09-17,F1,RSI extreme (control),TNX,15,,pending,,,,,,,,
+2026-09-17,F1,RSI extreme (control),TNX,20,,pending,,,,,,,,
