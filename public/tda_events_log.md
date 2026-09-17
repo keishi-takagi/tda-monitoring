@@ -723,3 +723,241 @@ This entry will require a follow-up when Brent publishes and the C1 status of
 rules as pre-registered, under the calendar as it stands today.
 
 ---
+
+## Entry 007 — 2026-09-17 — C1 resolution for 2026-09-02 through 2026-09-15 (follow-up to Entry 006)
+
+**Date of discovery:** 2026-09-17
+**Observed period:** 2026-09-02 through 2026-09-16
+**Status:** `exploratory`
+
+### Origin
+
+Entry 006 closed with a commitment to a follow-up once Brent published and the
+C1 status of 2026-09-02 through 2026-09-07 was resolved. This entry discharges
+that commitment. Reporting is unconditional under §3-1 of
+`PREREGISTRATION_methodology_paper.md`; it would have been written in the same
+form had the dates resolved to no detection.
+
+### Outcome
+
+| date | brent_yoy | vix_sma10 | dcnt | cond_brent | cond_vix | cond_dcnt | active |
+|---|---|---|---|---|---|---|---|
+| 2026-09-01 | 41.02% | 15.274 | −12 | 1 | 1 | 0 | 0 |
+| 2026-09-02 | 44.02% | 15.305 | −13 | 1 | 1 | 1 | **1** |
+| 2026-09-03 | 51.36% | 15.136 | −13 | 1 | 1 | 1 | **1** |
+| 2026-09-04 | 57.49% | 15.076 | −13 | 1 | 1 | 1 | **1** |
+| 2026-09-07 | 59.64% | 15.021 | −14 | 1 | 1 | 1 | **1** |
+| 2026-09-08 | 56.13% | 15.048 | −14 | 1 | 1 | 1 | **1** |
+| 2026-09-09 | 61.95% | 15.173 | −15 | 1 | 1 | 1 | **1** |
+| 2026-09-10 | 79.90% | 15.506 | −15 | 1 | 1 | 1 | **1** |
+| 2026-09-11 | 73.95% | 15.647 | −15 | 1 | 1 | 1 | **1** |
+| 2026-09-14 | 78.62% | 15.865 | −16 | 1 | 1 | 1 | **1** |
+| 2026-09-15 | 87.69% | 15.951 | −17 | 1 | 1 | 1 | **1** |
+| 2026-09-16 | NaN | 16.202 | −17 | 0 | 1 | 1 | 0 |
+
+C1 fired on ten consecutive sessions, 2026-09-02 through 2026-09-15. The four
+dates suspended at the time of Entry 006 (09-02, 09-03, 09-04, 09-07) all
+resolved to a detection, as did 09-08 and 09-09, which were in the same
+suspended state by the time Brent published.
+
+As of 2026-09-16 the series is in the suspended state again: `cond_vix_20` and
+`cond_delta_neg12` are satisfied and `brent_yoy` is unavailable. The same
+resolution is expected at the next Brent publication and is not assumed here.
+
+### How the dates were resolved
+
+Brent published between the run of 2026-09-10 and the run of 2026-09-11. The
+former carries the note `Brent: last observation 2026-09-01 (9d before
+target)`; the latter carries no gap note. Because `monitor_tda.py` regenerates
+the full history on every run, the suspended dates were assigned by the ordinary
+daily execution, in a single pass, under the rules as pre-registered.
+
+Across every run in the window `run_metadata_public.csv` records
+`monitor_version = v1.4`, `date_range_start = 1987-05-20`, and the §6 frozen
+parameter block byte-identical. `tda_monitoring_rules.md` remains v1.0. No code
+change, no version bump, and no manual intervention was made in anticipation of
+the resolution or after it.
+
+The handoff notes written on 2026-09-08 recorded the expectation that Brent
+would resolve these dates in the firing direction, on the grounds that a fall
+from 41% to below 30% inside one week would require a large decline in Brent
+itself. The expectation was correct. It is recorded here because the useful
+fact is not that the expectation held, but that nothing was done with it: the
+correct response to a foreseeable detection was to leave the system alone, and
+that is what happened.
+
+### 2026-09-07: a C1 on a day the US equity market was closed
+
+Entry 006 described this as a live exposure rather than a hypothetical, and it
+materialised. 2026-09-07 is Labor Day. VIX has an observation; SPY, QQQ, IWM,
+RSP, HYG and TNX do not. All three C1 conditions were satisfied and the event
+was written to `events_log.csv` with `ticker = VIX`.
+
+The consequence is visible in `forward_returns_tracking.csv`:
+
+- Rows with `signal_date = 2026-09-07` have `diff_VIX` populated at every
+  resolved horizon and all seven remaining outcome columns empty, because the
+  return base date has no equity or yield price.
+- The row `signal_date = 2026-09-04, horizon_d = 1` targets 2026-09-07 and is
+  likewise `diff_VIX`-only.
+
+No all-empty tracking rows are produced, which is the distinction Entry 006
+drew against the 188 Brent-only dates corrected in v1.4.
+
+This is not being corrected. The technical and procedural reasoning is
+unchanged from Entry 006, and the procedural half is now stronger rather than
+weaker: a detection is attached to the date, so any calendar change made now
+would be a change made after seeing which way the detection went.
+
+### Magnitudes
+
+`brent_yoy` moved from 44.02% to 87.69% across the window. That level is at the
+96.9th percentile of the 1987–2026 distribution. It is not a record: the series
+maximum is 629.61% (2021-04-19), a base effect from the 2020 collapse.
+
+`dcnt` deepened monotonically from −13 to −17. Days at or below −17 number 248
+of 9,182 observations. The series minimum is −22 (2001-09-05/06).
+
+`vix_sma10` remained between 15.02 and 16.20, never within four points of the
+20.0 threshold. The VIX condition was not binding at any point in the window;
+it was satisfied throughout with a wide margin, as it was in August (Entry 002,
+Entry 005).
+
+Ten consecutive active days is not a record. The longest runs in the history
+are 25 days (2004-09-30 to 2004-11-03), 23 days (2005-03-15 to 2005-04-15) and
+23 days (2006-04-18 to 2006-05-18).
+
+### Decomposition of the brent_yoy move (Entry 005 method)
+
+The day-over-day change in `brent_yoy` was decomposed into the current-day
+Brent return and the return of the observation leaving the back of the window,
+by the same method as Entry 005.
+
+| | mean \|return\| | max \|return\| |
+|---|---|---|
+| current day | 3.68% | 10.47% (2026-09-10) |
+| base day (t−252) | 1.41% | 3.87% |
+
+Over the window Brent rose from 96.02 (2026-09-01) to 130.80 (2026-09-15), a
+cumulative +36.22% across ten sessions. The corresponding t−252 base prices
+moved from 67.09 to 69.69, +2.35%. **The `brent_yoy` move is a front-of-window
+move in the level of Brent, not a base effect**, which is the same conclusion
+Entry 005 reached for August 2026 and the opposite of the 2021 maximum
+(629.61%), which was a base effect from the 2020 collapse.
+
+The window is calendrically sound: 252 Brent observations ending 2026-09-15
+span 364 calendar days.
+
+No data-quality fault was found. Repeated closes number 5 in the last 758
+observations, unchanged from the Entry 005 measurement. Every gap longer than
+three days in 2026 (04-07, 05-05, 05-26, 09-01) corresponds to a holiday
+weekend; no new gap appeared in this window.
+
+The single-day move of +10.47% on 2026-09-10 is exceeded on 47 of 9,977
+observations (99.5th percentile 10.33%). The level of 130.80 sits at the
+99.69th percentile of the 1987–2026 Brent series; the all-time maximum is
+143.95 (2008-07-03). Mean absolute daily Brent return for 2026 now stands at
+3.28%, against 1.48% in 2025 and 1.27% in 2024; for 2026-09-01 through 09-15 it
+is 3.98%.
+
+This is recorded as a measurement of the input series. Whether the size of the
+underlying oil move bears on the interpretation of the detection is not a
+question this entry answers, and the ten-day window is far too short to be
+treated as evidence about C1 either way.
+
+### The 2026-08-19 episode reached its 20-day horizon
+
+The single-day C1 episode of 2026-08-19 completed its +20d horizon on
+2026-09-16, inside this window, and §3-1 requires it to be reported here.
+
+| | published | observed |
+|---|---|---|
+| C1 → VIX +20d | +1.86, 95% CI [1.41, 2.31] | **+2.82** |
+
+The observed value lies **above** the published interval. The direction matches
+the prediction; the magnitude does not fall inside it.
+
+Complete out-of-sample record for C1 at +20d, pre-registration onward:
+
+| signal date | episode | diff_VIX +20d |
+|---|---|---|
+| 2026-06-08 | 1 | −2.79 |
+| 2026-06-09 | 1 | −2.97 |
+| 2026-06-10 | 1 | −6.38 |
+| 2026-08-19 | 2 | **+2.82** |
+| 2026-09-02 … 2026-09-15 | 3 | pending |
+
+Two completed episodes. In-sample mean is +1.74 (n = 441 signal-days). §4-1 of
+the pre-registration commits to not claiming validation unless the number of
+episodes supports it, and two episodes do not. No claim is made, in either
+direction, and the fact that the first directionally-consistent out-of-sample
+outcome arrived in this window does not change that.
+
+### Cross-check against existing frameworks (§7.2-3)
+
+**A1 co-fired.** A1 (HHH cell activated, Paper #8) fired on 2026-09-10
+(`cnt_z=1.90 ent_z=2.01 euler_z=1.04`) and 2026-09-11 (`cnt_z=1.88 ent_z=2.03
+euler_z=1.03`), on VIX, on two dates that were also C1. The previous A1 was
+2026-07-07. A1 has no published prediction interval: the justifying paper
+(*Compression-Release*) is unwritten, and §7.3 leaves the interval undetermined
+until it exists. The co-firing is recorded as a fact; it is not offered as
+corroboration, since A1 and C1 are computed from overlapping TDA features on
+the same ticker and are not independent tests.
+
+**Classical controls.** F1 and F2 fired at an elevated rate across the window,
+concentrated in credit and rates rather than in volatility: HYG RSI 12.3
+(09-15) and 14.8 (09-16), TNX RSI 89.4 (09-15) and 89.0 (09-16), SPY Bollinger
+z −2.20 (09-16). B1, A2, D1 and G1 did not fire.
+
+**Paper #6 zone classification.** All eleven market sessions in
+2026-09-01 through 2026-09-16 classify as **SAFE**, with
+`structural_risk = 0` and `fear_risk = 0` on every date — the same
+classification Entry 005 reported for the 23 trading days of August.
+
+| date | SPY dd | sma50/200 | RV20d | VIX | str | fear | zone |
+|---|---|---|---|---|---|---|---|
+| 2026-09-02 | −1.64% | 1.0638 | 7.38 | 15.20 | 0 | 0 | SAFE |
+| 2026-09-03 | −0.61% | 1.0642 | 8.27 | 14.32 | 0 | 0 | SAFE |
+| 2026-09-04 | −0.99% | 1.0644 | 8.10 | 14.53 | 0 | 0 | SAFE |
+| 2026-09-08 | −1.53% | 1.0646 | 8.32 | 15.72 | 0 | 0 | SAFE |
+| 2026-09-09 | −1.99% | 1.0644 | 8.40 | 16.46 | 0 | 0 | SAFE |
+| 2026-09-10 | −2.58% | 1.0639 | 8.53 | 17.84 | 0 | 0 | SAFE |
+| 2026-09-11 | −1.75% | 1.0636 | 8.74 | 15.84 | 0 | 0 | SAFE |
+| 2026-09-14 | −2.19% | 1.0634 | 8.82 | 17.10 | 0 | 0 | SAFE |
+| 2026-09-15 | −2.63% | 1.0629 | 8.81 | 17.20 | 0 | 0 | SAFE |
+| 2026-09-16 | −3.06% | 1.0625 | 8.65 | 17.71 | 0 | 0 | SAFE |
+
+Drawdown is measured against the trailing 252-session maximum of SPY close; at
+a maximum drawdown of 3.06% no alternative reference window changes `dd_score`.
+Every component is well inside its lowest bucket: SPY is within 3% of its high,
+the SMA50/200 ratio is above 1.06 throughout, realised volatility is under 9
+against a 15 cut-off, and VIX stays under 18 on every date including its
+window maximum of 17.84.
+
+2026-09-07 receives no classification. SPY has no observation on that date, so
+drawdown, the SMA ratio and realised volatility do not exist for it — the same
+result Entry 006 reported, and consistent with the date not being a session by
+any measure other than the presence of a VIX print.
+
+### No rule change
+
+`tda_monitoring_rules.md` remains v1.0. `monitor_tda.py` remains v1.4. The §6
+frozen parameters, the C1 strict inequality `dcnt < −12`, the threshold values
+and the session calendar are all unchanged by this entry.
+
+The review of the `detect_source_gaps` warning threshold, noted as pending once
+the C1 status resolved, is **not** being carried out now. 2026-09-16 is again
+suspended on Brent availability with two of three conditions satisfied, which
+is the same configuration that made the change inadvisable in the first place.
+The threshold is a warning mechanism and not a detection rule, so the objection
+is weaker than it was for the calendar in Entry 006 — but the review is
+postponed rather than argued down.
+
+### Follow-up
+
+The +20d horizons for 2026-09-02 through 2026-09-15 complete between late
+September and mid-October 2026. Episode 3 is the largest out-of-sample C1
+episode recorded so far, and its outcome will be reported here unconditionally
+and in full, regardless of where it falls relative to the published interval.
+
+---
