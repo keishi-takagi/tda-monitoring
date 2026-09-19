@@ -18822,6 +18822,7 @@ F1,RSI extreme (control),2,ticker=TNX rsi=74.1,2026-09-10,TNX
 F2,Bollinger Band breach (control),2,ticker=HYG bb_z=-2.53,2026-09-10,HYG
 F2,Bollinger Band breach (control),2,ticker=IWM bb_z=-2.13,2026-09-10,IWM
 F2,Bollinger Band breach (control),2,ticker=RSP bb_z=-2.54,2026-09-10,RSP
+F2,Bollinger Band breach (control),2,ticker=SPY bb_z=-2.10,2026-09-10,SPY
 F2,Bollinger Band breach (control),2,ticker=TNX bb_z=2.73,2026-09-10,TNX
 F2,Bollinger Band breach (control),2,ticker=VIX bb_z=2.83,2026-09-10,VIX
 F2,Bollinger Band breach (control),2,ticker=VIX9D bb_z=2.72,2026-09-10,VIX9D
@@ -18848,8 +18849,12 @@ F1,RSI extreme (control),2,ticker=HYG rsi=14.8,2026-09-16,HYG
 F1,RSI extreme (control),2,ticker=IWM rsi=25.0,2026-09-16,IWM
 F1,RSI extreme (control),2,ticker=RSP rsi=23.3,2026-09-16,RSP
 F1,RSI extreme (control),2,ticker=TNX rsi=89.0,2026-09-16,TNX
-F2,Bollinger Band breach (control),2,ticker=SPY bb_z=-2.20,2026-09-16,SPY
+F2,Bollinger Band breach (control),2,ticker=SPY bb_z=-2.16,2026-09-16,SPY
 F1,RSI extreme (control),2,ticker=HYG rsi=29.6,2026-09-17,HYG
 F1,RSI extreme (control),2,ticker=IWM rsi=26.5,2026-09-17,IWM
 F1,RSI extreme (control),2,ticker=RSP rsi=28.4,2026-09-17,RSP
 F1,RSI extreme (control),2,ticker=TNX rsi=78.1,2026-09-17,TNX
+F1,RSI extreme (control),2,ticker=HYG rsi=28.6,2026-09-18,HYG
+F1,RSI extreme (control),2,ticker=IWM rsi=29.1,2026-09-18,IWM
+F1,RSI extreme (control),2,ticker=RSP rsi=28.0,2026-09-18,RSP
+F1,RSI extreme (control),2,ticker=TNX rsi=78.3,2026-09-18,TNX
