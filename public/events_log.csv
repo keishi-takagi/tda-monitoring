@@ -18873,3 +18873,9 @@ F1,RSI extreme (control),2,ticker=HYG rsi=26.9,2026-09-23,HYG
 F1,RSI extreme (control),2,ticker=IWM rsi=28.2,2026-09-23,IWM
 F1,RSI extreme (control),2,ticker=RSP rsi=28.5,2026-09-23,RSP
 F1,RSI extreme (control),2,ticker=TNX rsi=76.4,2026-09-23,TNX
+A1,HHH cell activated (Paper #8),3,cnt_z=1.77 ent_z=1.85 euler_z=1.01,2026-09-24,VIX
+F1,RSI extreme (control),2,ticker=HYG rsi=21.3,2026-09-24,HYG
+F1,RSI extreme (control),2,ticker=IWM rsi=24.7,2026-09-24,IWM
+F1,RSI extreme (control),2,ticker=RSP rsi=20.4,2026-09-24,RSP
+F1,RSI extreme (control),2,ticker=TNX rsi=82.5,2026-09-24,TNX
+F2,Bollinger Band breach (control),2,ticker=HYG bb_z=-2.11,2026-09-24,HYG
