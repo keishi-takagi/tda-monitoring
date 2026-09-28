@@ -18884,3 +18884,9 @@ F1,RSI extreme (control),2,ticker=HYG rsi=21.5,2026-09-25,HYG
 F1,RSI extreme (control),2,ticker=IWM rsi=23.3,2026-09-25,IWM
 F1,RSI extreme (control),2,ticker=RSP rsi=25.8,2026-09-25,RSP
 F1,RSI extreme (control),2,ticker=TNX rsi=82.5,2026-09-25,TNX
+D1,Delta_cnt extreme spike,2,dcnt_z=-3.31,2026-09-28,VIX
+F1,RSI extreme (control),2,ticker=HYG rsi=19.1,2026-09-28,HYG
+F1,RSI extreme (control),2,ticker=IWM rsi=23.4,2026-09-28,IWM
+F1,RSI extreme (control),2,ticker=RSP rsi=27.3,2026-09-28,RSP
+F1,RSI extreme (control),2,ticker=TNX rsi=83.4,2026-09-28,TNX
+F2,Bollinger Band breach (control),2,ticker=HYG bb_z=-2.18,2026-09-28,HYG
