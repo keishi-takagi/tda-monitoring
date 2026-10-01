@@ -18904,3 +18904,7 @@ F1,RSI extreme (control),2,ticker=HYG rsi=20.5,2026-09-30,HYG
 F1,RSI extreme (control),2,ticker=IWM rsi=28.7,2026-09-30,IWM
 F1,RSI extreme (control),2,ticker=TNX rsi=80.9,2026-09-30,TNX
 F2,Bollinger Band breach (control),2,ticker=HYG bb_z=-2.04,2026-09-30,HYG
+F1,RSI extreme (control),2,ticker=HYG rsi=18.3,2026-10-01,HYG
+F1,RSI extreme (control),2,ticker=IWM rsi=28.5,2026-10-01,IWM
+F1,RSI extreme (control),2,ticker=TNX rsi=72.2,2026-10-01,TNX
+F2,Bollinger Band breach (control),2,ticker=HYG bb_z=-2.13,2026-10-01,HYG
