@@ -18862,49 +18862,53 @@ F1,RSI extreme (control),2,ticker=IWM rsi=29.1,2026-09-18,IWM
 F1,RSI extreme (control),2,ticker=RSP rsi=24.8,2026-09-18,RSP
 F1,RSI extreme (control),2,ticker=TNX rsi=78.3,2026-09-18,TNX
 C1,Topological Decoupling (Energy TDA),3,brent_yoy=73.7 vix_sma10=16.3 delta_cnt=-17,2026-09-21,VIX
+F1,RSI extreme (control),2,ticker=HYG rsi=23.2,2026-09-21,HYG
 F1,RSI extreme (control),2,ticker=TNX rsi=71.0,2026-09-21,TNX
 F2,Bollinger Band breach (control),2,ticker=QQQ bb_z=3.23,2026-09-21,QQQ
 A1,HHH cell activated (Paper #8),3,cnt_z=1.81 ent_z=1.74 euler_z=1.03,2026-09-22,VIX
 C1,Topological Decoupling (Energy TDA),3,brent_yoy=69.1 vix_sma10=16.1 delta_cnt=-16,2026-09-22,VIX
+F1,RSI extreme (control),2,ticker=HYG rsi=26.8,2026-09-22,HYG
 F1,RSI extreme (control),2,ticker=QQQ rsi=74.6,2026-09-22,QQQ
 F2,Bollinger Band breach (control),2,ticker=QQQ bb_z=2.83,2026-09-22,QQQ
 A1,HHH cell activated (Paper #8),3,cnt_z=1.79 ent_z=1.86 euler_z=1.02,2026-09-23,VIX
 C1,Topological Decoupling (Energy TDA),3,brent_yoy=68.7 vix_sma10=16.0 delta_cnt=-17,2026-09-23,VIX
-F1,RSI extreme (control),2,ticker=HYG rsi=26.9,2026-09-23,HYG
+F1,RSI extreme (control),2,ticker=HYG rsi=19.7,2026-09-23,HYG
 F1,RSI extreme (control),2,ticker=IWM rsi=28.2,2026-09-23,IWM
 F1,RSI extreme (control),2,ticker=RSP rsi=28.5,2026-09-23,RSP
 F1,RSI extreme (control),2,ticker=TNX rsi=76.4,2026-09-23,TNX
+F2,Bollinger Band breach (control),2,ticker=HYG bb_z=-2.29,2026-09-23,HYG
 A1,HHH cell activated (Paper #8),3,cnt_z=1.77 ent_z=1.85 euler_z=1.01,2026-09-24,VIX
 C1,Topological Decoupling (Energy TDA),3,brent_yoy=71.6 vix_sma10=15.8 delta_cnt=-18,2026-09-24,VIX
-F1,RSI extreme (control),2,ticker=HYG rsi=21.3,2026-09-24,HYG
+F1,RSI extreme (control),2,ticker=HYG rsi=14.5,2026-09-24,HYG
 F1,RSI extreme (control),2,ticker=IWM rsi=24.7,2026-09-24,IWM
 F1,RSI extreme (control),2,ticker=RSP rsi=20.4,2026-09-24,RSP
 F1,RSI extreme (control),2,ticker=TNX rsi=82.5,2026-09-24,TNX
-F2,Bollinger Band breach (control),2,ticker=HYG bb_z=-2.11,2026-09-24,HYG
+F2,Bollinger Band breach (control),2,ticker=HYG bb_z=-2.27,2026-09-24,HYG
 A1,HHH cell activated (Paper #8),3,cnt_z=1.76 ent_z=1.74 euler_z=1.00,2026-09-25,VIX
 C1,Topological Decoupling (Energy TDA),3,brent_yoy=63.0 vix_sma10=15.7 delta_cnt=-18,2026-09-25,VIX
-F1,RSI extreme (control),2,ticker=HYG rsi=21.5,2026-09-25,HYG
+F1,RSI extreme (control),2,ticker=HYG rsi=14.6,2026-09-25,HYG
 F1,RSI extreme (control),2,ticker=IWM rsi=23.3,2026-09-25,IWM
 F1,RSI extreme (control),2,ticker=RSP rsi=25.8,2026-09-25,RSP
 F1,RSI extreme (control),2,ticker=TNX rsi=82.5,2026-09-25,TNX
 C1,Topological Decoupling (Energy TDA),3,brent_yoy=73.9 vix_sma10=15.6 delta_cnt=-22,2026-09-28,VIX
 D1,Delta_cnt extreme spike,2,dcnt_z=-3.31,2026-09-28,VIX
-F1,RSI extreme (control),2,ticker=HYG rsi=19.1,2026-09-28,HYG
+F1,RSI extreme (control),2,ticker=HYG rsi=13.1,2026-09-28,HYG
 F1,RSI extreme (control),2,ticker=IWM rsi=23.4,2026-09-28,IWM
 F1,RSI extreme (control),2,ticker=RSP rsi=27.3,2026-09-28,RSP
 F1,RSI extreme (control),2,ticker=TNX rsi=83.4,2026-09-28,TNX
-F2,Bollinger Band breach (control),2,ticker=HYG bb_z=-2.18,2026-09-28,HYG
+F2,Bollinger Band breach (control),2,ticker=HYG bb_z=-2.14,2026-09-28,HYG
 C1,Topological Decoupling (Energy TDA),3,brent_yoy=66.3 vix_sma10=15.5 delta_cnt=-22,2026-09-29,VIX
 D1,Delta_cnt extreme spike,2,dcnt_z=-3.24,2026-09-29,VIX
-F1,RSI extreme (control),2,ticker=HYG rsi=18.8,2026-09-29,HYG
+F1,RSI extreme (control),2,ticker=HYG rsi=12.9,2026-09-29,HYG
 F1,RSI extreme (control),2,ticker=IWM rsi=26.5,2026-09-29,IWM
 F1,RSI extreme (control),2,ticker=TNX rsi=83.0,2026-09-29,TNX
-F2,Bollinger Band breach (control),2,ticker=HYG bb_z=-2.16,2026-09-29,HYG
-F1,RSI extreme (control),2,ticker=HYG rsi=20.5,2026-09-30,HYG
+F2,Bollinger Band breach (control),2,ticker=HYG bb_z=-2.07,2026-09-29,HYG
+F1,RSI extreme (control),2,ticker=HYG rsi=14.0,2026-09-30,HYG
 F1,RSI extreme (control),2,ticker=IWM rsi=28.7,2026-09-30,IWM
 F1,RSI extreme (control),2,ticker=TNX rsi=80.9,2026-09-30,TNX
 F2,Bollinger Band breach (control),2,ticker=HYG bb_z=-2.04,2026-09-30,HYG
-F1,RSI extreme (control),2,ticker=HYG rsi=18.3,2026-10-01,HYG
+F1,RSI extreme (control),2,ticker=HYG rsi=15.2,2026-10-01,HYG
 F1,RSI extreme (control),2,ticker=IWM rsi=28.5,2026-10-01,IWM
 F1,RSI extreme (control),2,ticker=TNX rsi=72.2,2026-10-01,TNX
 F2,Bollinger Band breach (control),2,ticker=HYG bb_z=-2.13,2026-10-01,HYG
+F1,RSI extreme (control),2,ticker=TNX rsi=75.6,2026-10-02,TNX
