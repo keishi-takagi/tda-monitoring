@@ -18917,3 +18917,7 @@ F1,RSI extreme (control),2,ticker=TNX rsi=75.6,2026-10-02,TNX
 F1,RSI extreme (control),2,ticker=HYG rsi=19.6,2026-10-05,HYG
 F1,RSI extreme (control),2,ticker=QQQ rsi=82.3,2026-10-05,QQQ
 F1,RSI extreme (control),2,ticker=TNX rsi=75.6,2026-10-05,TNX
+F1,RSI extreme (control),2,ticker=HYG rsi=27.5,2026-10-06,HYG
+F1,RSI extreme (control),2,ticker=QQQ rsi=83.0,2026-10-06,QQQ
+F1,RSI extreme (control),2,ticker=SPY rsi=73.6,2026-10-06,SPY
+F1,RSI extreme (control),2,ticker=TNX rsi=70.3,2026-10-06,TNX
