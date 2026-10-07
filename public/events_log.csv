@@ -18903,21 +18903,29 @@ F1,RSI extreme (control),2,ticker=HYG rsi=12.9,2026-09-29,HYG
 F1,RSI extreme (control),2,ticker=IWM rsi=26.5,2026-09-29,IWM
 F1,RSI extreme (control),2,ticker=TNX rsi=83.0,2026-09-29,TNX
 F2,Bollinger Band breach (control),2,ticker=HYG bb_z=-2.07,2026-09-29,HYG
+C1,Topological Decoupling (Energy TDA),3,brent_yoy=73.9 vix_sma10=15.4 delta_cnt=-20,2026-09-30,VIX
 F1,RSI extreme (control),2,ticker=HYG rsi=14.0,2026-09-30,HYG
 F1,RSI extreme (control),2,ticker=IWM rsi=28.7,2026-09-30,IWM
 F1,RSI extreme (control),2,ticker=TNX rsi=80.9,2026-09-30,TNX
 F2,Bollinger Band breach (control),2,ticker=HYG bb_z=-2.04,2026-09-30,HYG
+C1,Topological Decoupling (Energy TDA),3,brent_yoy=75.5 vix_sma10=15.4 delta_cnt=-20,2026-10-01,VIX
 F1,RSI extreme (control),2,ticker=HYG rsi=15.2,2026-10-01,HYG
 F1,RSI extreme (control),2,ticker=IWM rsi=28.5,2026-10-01,IWM
 F1,RSI extreme (control),2,ticker=TNX rsi=72.2,2026-10-01,TNX
 F2,Bollinger Band breach (control),2,ticker=HYG bb_z=-2.13,2026-10-01,HYG
+C1,Topological Decoupling (Energy TDA),3,brent_yoy=104.9 vix_sma10=15.5 delta_cnt=-20,2026-10-02,VIX
 F1,RSI extreme (control),2,ticker=HYG rsi=16.0,2026-10-02,HYG
 F1,RSI extreme (control),2,ticker=QQQ rsi=76.0,2026-10-02,QQQ
 F1,RSI extreme (control),2,ticker=TNX rsi=75.6,2026-10-02,TNX
+C1,Topological Decoupling (Energy TDA),3,brent_yoy=87.1 vix_sma10=15.6 delta_cnt=-19,2026-10-05,VIX
 F1,RSI extreme (control),2,ticker=HYG rsi=19.6,2026-10-05,HYG
 F1,RSI extreme (control),2,ticker=QQQ rsi=82.3,2026-10-05,QQQ
 F1,RSI extreme (control),2,ticker=TNX rsi=75.6,2026-10-05,TNX
+C1,Topological Decoupling (Energy TDA),3,brent_yoy=86.9 vix_sma10=15.6 delta_cnt=-19,2026-10-06,VIX
 F1,RSI extreme (control),2,ticker=HYG rsi=27.5,2026-10-06,HYG
 F1,RSI extreme (control),2,ticker=QQQ rsi=83.0,2026-10-06,QQQ
 F1,RSI extreme (control),2,ticker=SPY rsi=73.6,2026-10-06,SPY
 F1,RSI extreme (control),2,ticker=TNX rsi=70.3,2026-10-06,TNX
+F1,RSI extreme (control),2,ticker=HYG rsi=17.1,2026-10-07,HYG
+F1,RSI extreme (control),2,ticker=QQQ rsi=78.0,2026-10-07,QQQ
+F1,RSI extreme (control),2,ticker=TNX rsi=77.7,2026-10-07,TNX
