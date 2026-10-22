@@ -18943,7 +18943,9 @@ C1,Topological Decoupling (Energy TDA),3,brent_yoy=103.0 vix_sma10=15.5 delta_cn
 F1,RSI extreme (control),2,ticker=IWM rsi=29.1,2026-10-14,IWM
 F2,Bollinger Band breach (control),2,ticker=IWM bb_z=-2.48,2026-10-14,IWM
 F2,Bollinger Band breach (control),2,ticker=VIX bb_z=2.24,2026-10-14,VIX
+C1,Topological Decoupling (Energy TDA),3,brent_yoy=106.9 vix_sma10=15.5 delta_cnt=-13,2026-10-15,VIX
 F2,Bollinger Band breach (control),2,ticker=RSP bb_z=2.09,2026-10-15,RSP
+C1,Topological Decoupling (Energy TDA),3,brent_yoy=94.9 vix_sma10=16.0 delta_cnt=-13,2026-10-16,VIX
 F1,RSI extreme (control),2,ticker=VIX rsi=71.5,2026-10-16,VIX
 F2,Bollinger Band breach (control),2,ticker=IWM bb_z=-2.15,2026-10-16,IWM
 F2,Bollinger Band breach (control),2,ticker=QQQ bb_z=-2.89,2026-10-16,QQQ
@@ -18952,3 +18954,9 @@ F2,Bollinger Band breach (control),2,ticker=VIX9D bb_z=3.54,2026-10-16,VIX9D
 F2,Bollinger Band breach (control),2,ticker=VIX9D bb_z=2.00,2026-10-19,VIX9D
 F1,RSI extreme (control),2,ticker=RSP rsi=73.2,2026-10-20,RSP
 F1,RSI extreme (control),2,ticker=RSP rsi=72.8,2026-10-21,RSP
+F1,RSI extreme (control),2,ticker=QQQ rsi=28.5,2026-10-22,QQQ
+F1,RSI extreme (control),2,ticker=RSP rsi=74.2,2026-10-22,RSP
+F1,RSI extreme (control),2,ticker=TNX rsi=22.4,2026-10-22,TNX
+F2,Bollinger Band breach (control),2,ticker=QQQ bb_z=-2.06,2026-10-22,QQQ
+F2,Bollinger Band breach (control),2,ticker=RSP bb_z=2.17,2026-10-22,RSP
+F2,Bollinger Band breach (control),2,ticker=TNX bb_z=-2.82,2026-10-22,TNX
