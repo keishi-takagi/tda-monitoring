@@ -18963,3 +18963,5 @@ F2,Bollinger Band breach (control),2,ticker=TNX bb_z=-2.82,2026-10-22,TNX
 F1,RSI extreme (control),2,ticker=QQQ rsi=23.7,2026-10-23,QQQ
 F1,RSI extreme (control),2,ticker=TNX rsi=22.5,2026-10-23,TNX
 F2,Bollinger Band breach (control),2,ticker=TNX bb_z=-2.03,2026-10-23,TNX
+F1,RSI extreme (control),2,ticker=QQQ rsi=26.9,2026-10-26,QQQ
+F1,RSI extreme (control),2,ticker=TNX rsi=24.1,2026-10-26,TNX
