@@ -18981,3 +18981,5 @@ F2,Bollinger Band breach (control),2,ticker=QQQ bb_z=-2.01,2026-11-02,QQQ
 F2,Bollinger Band breach (control),2,ticker=SPY bb_z=-2.26,2026-11-02,SPY
 F2,Bollinger Band breach (control),2,ticker=VIX bb_z=2.07,2026-11-02,VIX
 F2,Bollinger Band breach (control),2,ticker=VIX9D bb_z=2.06,2026-11-02,VIX9D
+F1,RSI extreme (control),2,ticker=RSP rsi=70.9,2026-11-04,RSP
+F2,Bollinger Band breach (control),2,ticker=RSP bb_z=2.28,2026-11-04,RSP
