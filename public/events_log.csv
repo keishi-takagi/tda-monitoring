@@ -18987,3 +18987,7 @@ F2,Bollinger Band breach (control),2,ticker=QQQ bb_z=-2.64,2026-11-05,QQQ
 F2,Bollinger Band breach (control),2,ticker=SPY bb_z=-3.03,2026-11-05,SPY
 F2,Bollinger Band breach (control),2,ticker=VIX bb_z=3.36,2026-11-05,VIX
 F2,Bollinger Band breach (control),2,ticker=VIX9D bb_z=3.20,2026-11-05,VIX9D
+A1,HHH cell activated (Paper #8),3,cnt_z=1.28 ent_z=1.23 euler_z=4.76,2026-11-06,HYG
+F1,RSI extreme (control),2,ticker=TNX rsi=29.7,2026-11-06,TNX
+F2,Bollinger Band breach (control),2,ticker=SPY bb_z=-2.30,2026-11-06,SPY
+F2,Bollinger Band breach (control),2,ticker=VIX bb_z=2.10,2026-11-06,VIX
