@@ -18998,3 +18998,7 @@ A1,HHH cell activated (Paper #8),3,cnt_z=1.96 ent_z=1.81 euler_z=4.08,2026-11-13
 A1,HHH cell activated (Paper #8),3,cnt_z=1.95 ent_z=1.81 euler_z=1.37,2026-11-16,HYG
 A2,HHH -> HHL transition (Paper #8),3,prev=HHH today=HHL,2026-11-17,HYG
 F2,Bollinger Band breach (control),2,ticker=IWM bb_z=-2.17,2026-11-17,IWM
+F2,Bollinger Band breach (control),2,ticker=IWM bb_z=-2.38,2026-11-19,IWM
+F2,Bollinger Band breach (control),2,ticker=RSP bb_z=-2.46,2026-11-19,RSP
+F2,Bollinger Band breach (control),2,ticker=SPY bb_z=-2.29,2026-11-19,SPY
+F2,Bollinger Band breach (control),2,ticker=VIX bb_z=2.03,2026-11-19,VIX
