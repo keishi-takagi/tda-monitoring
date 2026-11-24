@@ -19010,3 +19010,4 @@ F2,Bollinger Band breach (control),2,ticker=SPY bb_z=-2.83,2026-11-20,SPY
 F2,Bollinger Band breach (control),2,ticker=VIX bb_z=2.85,2026-11-20,VIX
 F2,Bollinger Band breach (control),2,ticker=VIX9D bb_z=2.83,2026-11-20,VIX9D
 G1,VIX level above 30 (control),2,vix=35.89,2026-11-20,VIX
+F1,RSI extreme (control),2,ticker=HYG rsi=27.4,2026-11-24,HYG
